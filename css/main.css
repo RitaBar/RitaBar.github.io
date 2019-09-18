@@ -4,12 +4,16 @@ body {
     line-height: 1.5;
 }
 
-header, nav, main, footer {
+header,
+nav,
+main,
+footer {
     margin: 1.25rem auto;
     max-width: 760px;
 }
 
-header, footer {
+header,
+footer {
     border-radius: 10px;
     background-color: burlywood;
     color: saddlebrown;
@@ -17,10 +21,21 @@ header, footer {
     padding: 1.5rem;
 }
 
-a.school:link {color: saddlebrown;}
-a.school:visited {color: saddlebrown;}
-a.school:hover {color: wheat;}
-a.school:active {color: beige;}
+a.school:link {
+    color: saddlebrown;
+}
+
+a.school:visited {
+    color: saddlebrown;
+}
+
+a.school:hover {
+    color: wheat;
+}
+
+a.school:active {
+    color: beige;
+}
 
 
 
@@ -30,15 +45,17 @@ img {
     width: 200px;
     height: 274px;
 }
+
 h1 {
     font-size: 2.75em;
     font-weight: bold;
 }
+
 h2 {
     font-size: 1.875em;
     font-weight: lighter;
 }
+
 p {
     font-size: 0.875em;
 }
-

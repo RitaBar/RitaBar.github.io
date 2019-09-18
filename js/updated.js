@@ -1,4 +1,4 @@
-var lastupd = new Date(document.lastModified); 
+var lastupd = new Date(document.lastModified);
 numMonth = lastupd.getMonth() + 1;
 numDate = lastupd.getDate();
 numYear = lastupd.getFullYear();
