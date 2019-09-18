@@ -18,6 +18,10 @@ header, footer {
 }
 
 a.school:link {color: saddlebrown;}
+a.school:visited {color: bisque;}
+a.school:hover {color: wheat;}
+a.school:active {color: beige;}
+
 
 
 img {
