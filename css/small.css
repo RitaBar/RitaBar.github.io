@@ -12,9 +12,7 @@ footer {
     max-width: 760px;
 }
 
-header,
-footer {
-    border-radius: 10px;
+header, footer {
     background-color: burlywood;
     color: saddlebrown;
     text-align: center;
@@ -37,26 +35,24 @@ a.school:active {
     color: beige;
 }
 
-
-
 img {
-    float: right;
-    margin: 8px;
     width: 200px;
     height: 274px;
 }
 
 h1 {
-    font-size: 2.75em;
+    font-size: 1.5em;
     font-weight: bold;
     font-family: 'Trirong', serif;
 }
 
 h2 {
-    font-size: 1.875em;
+    font-size: 1em;
     font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
     font-size: 0.875em;
+    font-family: 'Poppins', sans-serif;
 }

@@ -1,0 +1,87 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 1.25rem auto;
+    max-width: 760px;
+}
+
+
+header, footer {
+    background-color: rgb(114, 66, 4);
+    color: bisque;
+    text-align: center;
+    padding: .5rem;
+}
+
+header {
+    line-height: .5;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main section {
+    margin: 1rem;
+    border: 1px solid rgb(114, 66, 4);
+    border-radius: 10px 10px 0px 0px;
+    background-color:rgb(255, 248, 235);
+    }
+
+a.school:link {
+    color: bisque;
+}
+
+a.school:visited {
+    color: bisque;
+}
+
+a.school:hover {
+    color: white}
+
+a.school:active {
+    color: beige;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    float: left;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Trirong', serif;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+}
+h3 {
+    font-size: .8em;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(114, 66, 4);
+    color: bisque;
+    margin: 0em;
+    padding: 0.2rem;
+    border-radius: 8px 8px 0px 0px;
+}
+
+p {
+    font-size: 0.8em;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.2rem;
+    color: rgb(70, 40, 2);
+}
