@@ -12,6 +12,9 @@ footer {
     max-width: 760px;
 }
 
+nav {
+    font-size: .75em;
+}
 
 header, footer {
     background-color: rgb(114, 66, 4);
@@ -35,6 +38,22 @@ main section {
     border-radius: 10px 10px 0px 0px;
     background-color:rgb(255, 248, 235);
     }
+
+a:link {
+    color: rgb(114, 66, 4);
+}
+
+a:visited {
+    color: rgb(158, 120, 70);
+}
+
+a:hover {
+    color: burlywood
+}
+
+a:active {
+    color: rgba(189, 116, 20, 0.719);  
+}
 
 a.school:link {
     color: blanchedalmond;
