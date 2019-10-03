@@ -98,19 +98,19 @@ h2 {
 
 }
 h3 {
-    font-size: 1.2em;
+    font-size: 1.25em;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     color: rgb(70, 40, 2);
 
 }
 h4, h5 {
-    font-size: 0.75em;
+    font-size: 1em;
     font-family: 'Poppins', sans-serif;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.25em;
     font-family: 'Poppins', sans-serif;
     padding: 0.2rem;
     color: rgb(70, 40, 2);
