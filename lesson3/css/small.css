@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+header,
+nav,
+main,
+footer {
+
+    max-width: 760px;
+    margin: 0 auto;
+
+}
+
+nav {
+    font-size: .75em;
+    background-color: bisque;
+    color: rgb(114, 66, 4);
+    text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav li a {
+	display: block;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+
+header, footer {
+    background-color: rgb(114, 66, 4);
+    color: bisque;
+    text-align: center;
+    padding: .5rem;
+}
+
+header {
+    line-height: .5;
+}
+
+a:link {
+    color: rgb(114, 66, 4);
+}
+
+a:visited {
+    color: rgb(158, 120, 70);
+}
+
+a:hover {
+    color: burlywood
+}
+
+a:active {
+    color: rgba(189, 116, 20, 0.719);  
+}
+
+a.school:link {
+    color: blanchedalmond;
+}
+
+a.school:visited {
+    color: bisque;
+}
+
+a.school:hover {
+    color: white}
+
+a.school:active {
+    color: beige;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    float: left;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Trirong', serif;
+    line-height:100%;
+
+}
+
+h2 {
+    font-size: 1.75em;
+    font-family: 'Poppins', sans-serif;
+
+}
+h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(70, 40, 2);
+
+}
+h4, h5 {
+    font-size: 0.75em;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.2rem;
+    color: rgb(70, 40, 2);
+}
+
+h1.header {
+    background-color: #0059b3;
+    color: #ffe44d;
+}
+
+h1.weather, h2.weather, h3.weather {
+    color: #004080;
+}
+
+h4.weather, h5.weather {
+    background-color: #1e90ff;
+    color: #ffd700;
+}
+
+p.weather {
+    color: #00264d;
+}
