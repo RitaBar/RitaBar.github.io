@@ -150,6 +150,6 @@ p {
     padding: 15px;
     font-style: italic;
 }
-.responsive li {
+.responsive ul li {
 	display: block;
 }
