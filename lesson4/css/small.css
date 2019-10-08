@@ -19,11 +19,15 @@ nav {
     font-size: .75em;
     background-color: #c3f0ff;
 }
+nav ul {
+    padding: 0;
+}
 
 .navigation {
     list-style: none;
     text-align: center;
     padding: 0;
+    text-align: left;
 }
 
 .navigation li:first-child {
