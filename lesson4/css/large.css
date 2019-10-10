@@ -2,23 +2,4 @@
     header img {
         width: 100%;
     }
-    
-    nav ul {
-         display: flex; 
-    }
-
-    nav li a {
-        text-align: center;
-
-    }
-
-    .navigation li:first-child {
-        display: none;
-    }
-
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-    }
-
 }
