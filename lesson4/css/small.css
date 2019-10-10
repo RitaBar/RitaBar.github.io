@@ -68,7 +68,7 @@ header {
  .motto {
      font-style: italic;
      font-size: 1.5em;
-     padding: 0;
+     padding: .2em;
      margin: 0;
  }
 
@@ -118,6 +118,7 @@ h1 {
     font-weight: bold;
     font-family: 'Trirong', serif;
     line-height:100%;
+    margin: .5rem;
 
 }
 
