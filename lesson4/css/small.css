@@ -4,18 +4,13 @@ body {
     line-height: 1.5;
 }
 
-header,
-nav,
-main,
-footer {
-    max-width: 900px;
+header, nav, main, footer {
+    max-width: 600px;
     margin: 0 auto;
 }
 
 nav {
-    margin: 0 auto;
     padding: 0;
-    max-width: 900px;
     font-size: .75em;
     background-color: #c3f0ff;
 }
