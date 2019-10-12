@@ -3,7 +3,7 @@
         width: 100%;
     }
 
-    header, nav, main, footer {
+main, footer {
         max-width: 900px;
     }
     

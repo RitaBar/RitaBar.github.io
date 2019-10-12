@@ -1,7 +1,8 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 40em) {
     header img {
         width: 85%;
     }
+
 
     nav ul {
         display: flex;
@@ -9,6 +10,7 @@
 
     nav li a {
         text-align: center;
+        padding: 1px;
 
     }
     .navigation li:first-child {
@@ -19,6 +21,5 @@
         display: block;
         flex: 1 1 100%;
     }
-
 
 }
