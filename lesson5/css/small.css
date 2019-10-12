@@ -81,20 +81,23 @@ footer {
 
 a:link {
     color: #00264d;
+    text-decoration: none;
 }
 
 a:visited {
-    color: #0471df;
+    background-color: #ffe44d;
+    color: #0059b3;
+    text-decoration: underline;
 }
 
 a:hover {
-    color: #0567ca;
-    background-color: #ffe96cad;
+    background-color: #0059b3;
+    color: #ffe44d;  
 }
 
 a:active {
-    background-color: #0059b3;
-    color: #ffe44d;  
+    background-color: #ffe96cad;
+    color: #3aabc6;
 }
 
 
