@@ -4,11 +4,13 @@ body {
     line-height: 1.5;
 }
 
-header, nav {
+header,
+nav {
     margin: 0 auto;
 }
 
- main, footer {
+main,
+footer{
     max-width: 600px;
     margin: 0 auto;
 }
@@ -30,7 +32,7 @@ nav ul {
 }
 
 .navigation li:first-child {
-	display: block;
+    display: block;
 }
 
 .navigation li {
@@ -38,16 +40,28 @@ nav ul {
 }
 
 nav li a {
-	display: block;
-	text-align: left;
-	padding: 0.75rem;
-	text-decoration: none;
-	font-size: 0.95rem;
+    display: block;
+    text-align: left;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
 }
 
-header, footer {
+header,
+footer {
     text-align: center;
     padding: .5rem;
+}
+
+
+.banner {
+    display: block;
+    margin: 0;
+    border: 1px dashed #0059b3;
+    background: #ffe44d;
+    color: #0059b3;
+    font-size: 2rem;
+    text-align: center;
 }
 
 header {
@@ -57,26 +71,26 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
 
- header img {
-     width: 80px;
-     height: auto;
- }
+header img {
+    width: 80px;
+    height: auto;
+}
 
- .motto {
-     font-style: italic;
-     font-size: 1.5em;
-     padding: .2em;
-     margin: 0;
- }
+.motto {
+    font-style: italic;
+    font-size: 1.5em;
+    padding: .2em;
+    margin: 0;
+}
 
- .headings {
-     display: flex;
-     flex-direction: column;
-     padding: 0;
-     margin: 0;
- }
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
 
 footer {
     background-color: #c3f0ff;
@@ -96,7 +110,7 @@ a:visited {
 
 a:hover {
     background-color: #0059b3;
-    color: #ffe44d;  
+    color: #ffe44d;
 }
 
 a:active {
@@ -119,7 +133,7 @@ h1 {
     font-size: 2.5em;
     font-weight: bold;
     font-family: 'Trirong', serif;
-    line-height:100%;
+    line-height: 100%;
     margin: .5rem;
 
 }
@@ -130,13 +144,15 @@ h2 {
     text-align: center;
 
 }
+
 h3 {
     font-size: 1.25em;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
 }
 
-h4, h5 {
+h4,
+h5 {
     font-size: 1em;
     font-family: 'Poppins', sans-serif;
     background-color: #94C9FF;
@@ -157,6 +173,37 @@ p {
     padding: 15px;
     font-style: italic;
 }
+
+.herodiv {
+    display: grid;
+    position: relative;
+    /*margin: 10px auto;*/
+    /*padding: 15px;*/
+    /*border: 1px solid #0059b3;*/
+    color: white;
+}
+
+.wsummary {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: #c3f0ff;
+    color: #0059b3;
+    padding: .5rem;
+    box-shadow: 0 0 30px #00264d;
+    opacity: .8;
+}
+
+.summaryInfo1 {
+    text-align: right;
+}
+
+.summaryInfo2 {
+    text-align: left;
+}
+
 .responsive li {
-	display: block;
+    display: block;
 }

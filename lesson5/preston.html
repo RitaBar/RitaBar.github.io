@@ -15,16 +15,17 @@
 </head>
 
 <body>
+    <div class="banner"></div>
     <header>
         <picture>
             <img src="images/iconfinder_icon-59_667368.png" alt="icon which includes a sun, cloud, and thermometer">
         </picture>
-    
+
         <section class="headings">
             <h1>Weather Presents</h1>
             <div class="motto">for Southeast Idaho</div>
         </section>
-        
+
     </header>
 
     <nav class="navigation">
@@ -41,18 +42,35 @@
 
     <main>
         <h2>Preston, Idaho</h2>
-        <div class="contentbox">hero image / weather summary</div>
+        <div class="herodiv">
+            <picture><img src="images/aerial-aerial-shot-architecture-3030272-cropped.jpg"
+                    alt="arial shot of a town">&nbsp;</picture>
+            <section class="wsummary">
+                <h3>Weather Summary</h3><br>
+                <div class="summaryInfo1">Currently:&nbsp;</div>
+                <div class="summaryInfo2">Sunny</div>
+                <div class="summaryInfo1">High: &nbsp;</div>
+                <div class="summaryInfo2">40 &#8457;</div>
+                <div class="summaryInfo1">Wind Chill: &nbsp;</div>
+                <div class="summaryInfo2">30 &#8457;</div>
+                <div class="summaryInfo1">Humidity: &nbsp;</div>
+                <div class="summaryInfo2">80%</div>
+                <div class="summaryInfo1">Wind Speed: &nbsp;</div>
+                <div class="summaryInfo2">5 mph</div>
+            </section>
+        </div>
         <div class="contentbox">5-day forecast</div>
         <div class="contentbox">article</div>
         <div class="contentbox">contact information</div>
-    
+
 
     </main>
 
     <footer>
-        &copy; <span id="copyyear"></span> | Weather Presents | Rita F. Bartholomew <br> 
+        &copy; <span id="copyyear"></span> | Weather Presents | Rita F. Bartholomew <br>
         <span id="currentDate"></span>
     </footer>
     <script src="js/dateToday.js"></script>
     <script src="js/year.js"></script>
     <script src="js/toggle.js"></script>
+    <script src="js/bannerad.js"></script>
