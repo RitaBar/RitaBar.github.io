@@ -103,9 +103,7 @@ a:link {
 }
 
 a:visited {
-    background-color: #ffe44d;
-    color: #0059b3;
-    text-decoration: underline;
+    color: #006fdd;
 }
 
 a:hover {
@@ -149,6 +147,7 @@ h3 {
     font-size: 1.25em;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+    color: #0059b3;
 }
 
 h4,
@@ -183,6 +182,23 @@ p {
     color: white;
 }
 
+.forecast {
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #0059b3;
+    padding: 15px;
+}
+
+.article {
+    display: block;
+}
+
+.article img{
+    max-width: 100%;
+    height: auto;
+    float: none;
+}
+
 .wsummary {
     display: grid;
     grid-template-columns: auto auto;
@@ -195,6 +211,7 @@ p {
     box-shadow: 0 0 30px #00264d;
     opacity: .8;
 }
+
 
 .summaryInfo1 {
     text-align: right;

@@ -25,4 +25,11 @@
         flex: 1 1 100%;
     }
 
+    .article img{
+        max-width: 100%;
+        height: auto;
+        float: right;
+        padding: 10px 0px 10px 10px;
+    }
+
 }
