@@ -1,10 +1,10 @@
 var today = new Date();
+var day = today.getDay();
+var numFriday = 5;
 
-var day = {
-    weekday
-};
-var ad = "Saturday = Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion."
+if (day === numFriday) {
+    var ad = "Saturday = Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion."
+    document.getElementById('banner').innerHTML = ad;
+}
 
 
-document.getElementsByClassName('banner').innerHTML = "Saturday = Preston Pancakes in the Park! 
-<br> 9:00 a.m. Saturday at the city park pavilion.";

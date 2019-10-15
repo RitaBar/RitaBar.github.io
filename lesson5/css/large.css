@@ -3,8 +3,12 @@
         width: 100%;
     }
 
-main, footer {
+    main, footer {
         max-width: 900px;
+    }
+
+    .article img {
+        width: 80%
     }
 
 }
