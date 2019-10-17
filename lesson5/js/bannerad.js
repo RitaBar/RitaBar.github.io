@@ -1,10 +1,12 @@
-var today = new Date();
-var day = today.getDay();
-var numFriday = 5;
+const thisday = new Date();
+const dayNumber = thisday.getDay();
 
-if (day === numFriday) {
-    var ad = "Saturday = Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion."
-    document.getElementById('banner').innerHTML = ad;
+
+if (dayNumber == 5) {
+    document.getElementById("banner").classList.add("showme");
+}
+else {
+    document.getElementById("banner").classList.add("hideme");
 }
 
 
