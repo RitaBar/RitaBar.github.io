@@ -2,7 +2,7 @@ const thisday = new Date();
 const dayNumber = thisday.getDay();
 
 
-if (dayNumber == 5) {
+if (dayNumber == 3) {
     document.getElementById("banner").classList.add("showme");
 }
 else {
