@@ -17,9 +17,8 @@
 
     nav li a {
         text-align: center;
-
-
     }
+    
     .navigation li:first-child {
         display: none;
     }

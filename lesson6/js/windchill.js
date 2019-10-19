@@ -1,16 +1,15 @@
-var temp = document.getElementById('highTemp');
-var speed = document.getElementById('windSpeed');
-var windchill = "NA";
-// change strings to numbers
-// do numbers meet criteria for offical requirements -- if statement
-// if numbers meet criteria is true {
-//     windchill = calculateWindChill(temp speed) + " " + &#8457};
-//     document.getElementById('wChill').textContent= windchill;
-//
+var temp = parseFloat(document.getElementById('highTemp').innerHTML);
+var speed = parseFloat(document.getElementById('windSpeed').innerHTML);
+
+var windchill = calculateWindChill(temp, speed);
+
+if (windchill <= 50 && speed > 3) {
+    document.getElementById('wChill').textContent = windchill.toFixed(1) + " " + "\xB0F";
+} else {
+    document.getElementById('wChill').textContent = "NA";
+}
 
 function calculateWindChill(temp, speed) {
-    var windchill;
-// do the math Math.
+    windchill = (35.74 + (0.6215 * temp) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * temp * Math.pow(speed, 0.16)));
     return windchill;
-    //35.74+0.6215t-35.75s^0.16+0.4275ts^0.16
 }
