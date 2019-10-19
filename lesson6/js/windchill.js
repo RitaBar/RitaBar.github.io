@@ -4,7 +4,7 @@ var speed = parseFloat(document.getElementById('windSpeed').innerHTML);
 var windchill = calculateWindChill(temp, speed);
 
 if (windchill <= 50 && speed > 3) {
-    document.getElementById('wChill').textContent = windchill.toFixed(1) + " " + "\xB0F";
+    document.getElementById('wChill').textContent = windchill.toFixed(0) + "\xB0F";
 } else {
     document.getElementById('wChill').textContent = "NA";
 }
