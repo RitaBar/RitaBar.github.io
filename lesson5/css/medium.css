@@ -25,6 +25,10 @@
         flex: 1 1 100%;
     }
 
+    .wsummary {
+        font-size: 1.5vw;
+    }
+    
     .forecastContainer {
         display: block;
         text-align: center;

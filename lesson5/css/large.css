@@ -6,6 +6,10 @@
     main, footer {
         max-width: 900px;
     }
+    
+    .wsummary {
+        font-size: 1vw;
+    }
 
     .article img {
         width: 80%
