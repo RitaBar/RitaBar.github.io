@@ -8,7 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Lesson 6 for Rita Bartholomew - CIT 230: Web Frontend Development at BYU-Idaho">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins%7CTrirong&display=swap" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
@@ -44,8 +43,13 @@
     <main>
         <h2>Preston, Idaho</h2>
         <div class="herodiv">
-            <picture><img src="images/aerial-aerial-shot-architecture-3030272-cropped.jpg"
-                    alt="arial shot of a town">&nbsp;</picture>
+            <picture>
+                <source media="(min-width:960px)" srcset="images/cit230_image-900px.jpg">
+                <source media="(min-width:764px)" srcset="images/cit230_image-760px.jpg">
+                <source media="(min-width:640px)" srcset="images/cit230_image-600px.jpg">
+                <img src="images/cit230_image-600px.jpg"
+                    alt="sun shinning through clouds" style="width:auto;">
+            </picture>
             <section class="wsummary">
                 <div class="summaryInfo1"><h3>Weather&nbsp;</h3></div>
                 <div class="summaryInfo2"><h3>Summary&nbsp;&nbsp;&nbsp;</h3></div>
@@ -131,7 +135,7 @@
     <script src="js/toggle.js"></script>
     <script src="js/bannerad.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>({google: {families: ['Trirong', 'Poppins']}});</script>
+    <script>({google: {families: ['Trirong', 'Poppins', 'Roboto']}});</script>
 </body>
 
 </html>

@@ -3,6 +3,10 @@
         width: 85%;
     }
 
+    main, footer {
+        max-width: 760px;
+    }
+
     nav li a {
         padding: 12px 1px;
     }
