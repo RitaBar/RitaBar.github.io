@@ -8,5 +8,3 @@ if (dayNumber == 5) {
 else {
     document.getElementById("banner").classList.add("hideme");
 }
-
-
