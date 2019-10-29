@@ -146,7 +146,7 @@ h3 {
     font-size: 1.25em;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    color: #0059b3;
+    color: #005ab3;
     margin: .5rem 2%;
 }
 
@@ -182,7 +182,7 @@ p {
     position: absolute;
     top: 30px;
     left: 30px;
-    background: #c3f0ff;
+    background: #c3f0ffa4;
     color: #0059b3;
     padding: .5rem;
     box-shadow: 0 0 30px #00264d;
@@ -231,7 +231,18 @@ p {
     display: none;
 }
 
-
 .responsive li {
+    display: block;
+}
+
+figure {
+    margin:0;
+}
+
+figcaption {
+    display: block;
+  }
+
+.weatherGallery {
     display: block;
 }

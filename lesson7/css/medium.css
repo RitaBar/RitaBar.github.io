@@ -78,5 +78,12 @@
     display: block;
 }
 
+.weatherGallery {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0px auto;
+    padding: 15px;
+}
 
 }
