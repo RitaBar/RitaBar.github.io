@@ -10,7 +10,7 @@ function preloadImage(img) {
 }
 
 const imgOptions = {
-  threshold: .8,
+  threshold: 1,
   rootMargin: "0px 0px 10px 0px"
 };
 
