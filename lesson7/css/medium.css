@@ -3,7 +3,8 @@
         width: 85%;
     }
 
-    main, footer {
+    main,
+    footer {
         max-width: 760px;
     }
 
@@ -38,7 +39,7 @@
         margin: 20px 20px 50px 20px;
     }
 
-    .forecastContainer h3{
+    .forecastContainer h3 {
         margin: 0;
     }
 
@@ -67,23 +68,23 @@
         border-left: 1px solid #0059b3;
     }
 
-    .article img{
+    .article img {
         max-width: 60%;
         height: auto;
         float: right;
         padding: 0px 0px 5px 10px;
     }
 
-.map {
-    display: block;
-}
+    .map {
+        display: block;
+    }
 
-.weatherGallery {
-    max-width: 500px;
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: 0px auto;
-    padding: 15px;
-}
+    .weatherGallery {
+        max-width: 750px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    
 
 }

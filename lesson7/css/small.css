@@ -236,13 +236,21 @@ p {
 }
 
 figure {
-    margin:0;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.205);
 }
 
 figcaption {
     display: block;
-  }
+}
+
+ figure img {
+     width: 100%;
+     border: 1px solid #00264d;
+ }
 
 .weatherGallery {
     display: block;
+    margin: 0px 0px 25px 0px;
 }
