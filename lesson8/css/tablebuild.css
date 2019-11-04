@@ -43,14 +43,11 @@ tr:nth-child(odd) {
     background-color: #e7ffed;
 }
 
-td, th {
-    text-align: center;
+tfoot {
+    background-color: #7fb9c2;
+    font-size: .6rem;
+    padding: 6px;
+    margin: 0;
 }
 
-p {
-    font-size: .6rem;
-    background-color: #7fb9c2;
-    padding: 6px;
-    margin: 0%;
-    text-align: center;
-}
+
