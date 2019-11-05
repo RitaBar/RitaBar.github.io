@@ -47,7 +47,6 @@ tr:nth-child(odd) {
 }
 
 tfoot {
-    background-color: #7fb9c2;
     font-size: .6rem;
     padding: 6px;
     margin: 0;
