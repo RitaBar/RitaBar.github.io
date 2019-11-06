@@ -38,11 +38,11 @@ th {
     width: 100%;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
     background-color: #e7f0ed;
 }
 
-tr:nth-child(odd) {
+tr:nth-child(even) {
     background-color: #e7ffed;
 }
 
