@@ -15,6 +15,7 @@ footer{
     margin: 0 auto;
 }
 
+/*---------------- Navigation --------------*/
 nav {
     font-size: .75em;
     background-color: #c3f0ff;
@@ -47,61 +48,10 @@ nav li a {
     font-size: 0.95rem;
 }
 
-header,
-footer {
-    text-align: center;
-    padding: .5rem;
-}
-
 .active {
     background-color: #ffe96cad;
     color: #3aabc6;
     font-weight: bold;
-}
-
-#banner {
-    margin: 0;
-    background: #ffe44d;
-    color: #0059b3;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.showme {display: block;}
-
-.hideme {display: none;}
-
-header {
-    line-height: .5;
-    background-color: #0059b3;
-    color: #ffe44d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header img {
-    width: 80px;
-    height: auto;
-}
-
-.motto {
-    font-style: italic;
-    font-size: 1.5em;
-    padding: .2em;
-    margin: 0;
-}
-
-.headings {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
-
-footer {
-    background-color: #c3f0ff;
-    color: #00264d;
 }
 
 a:link {
@@ -122,6 +72,47 @@ a:active {
     background-color: #ffe96cad;
     color: #3aabc6;
 }
+
+/*---------------- Header --------------*/
+header {
+    line-height: .5;
+    background-color: #0059b3;
+    color: #ffe44d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.motto {
+    font-style: italic;
+    font-size: 1.5em;
+    padding: .2em;
+    margin: 0;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: .5rem;
+}
+
+footer {
+    background-color: #c3f0ff;
+    color: #00264d;
+}
+
 
 h1 h2 {
     color: #004080;
@@ -165,6 +156,21 @@ p {
     margin: .5rem 2%;
 }
 
+/*---------------- Preston Banner --------------*/
+#banner {
+    margin: 0;
+    background: #ffe44d;
+    color: #0059b3;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.showme {display: block;}
+
+.hideme {display: none;}
+
+
+/*---------------- hero div --------------*/
 .herodiv {
     display: grid;
     position: relative;
@@ -199,14 +205,11 @@ p {
     text-align: left;
 }
 
-.socialMediaLogo {
-    padding-right: 10px;
-}
-
 .forecastContainer {
     display: none;
 }
 
+/*---------------- article --------------*/
 .article {
     display: block;
     border: 1px solid #0059b3;
@@ -218,6 +221,11 @@ p {
     height: auto;
     float: none;
 }
+/*---------------- contact info --------------*/
+.socialMediaLogo {
+    padding-right: 10px;
+}
+
 .contactInfo {
     display: grid;
     grid-template-columns: auto auto;
@@ -235,6 +243,7 @@ p {
     display: block;
 }
 
+/*---------------- Gallery --------------*/
 figure {
     margin: 10px;
     padding: 10px;
@@ -253,4 +262,114 @@ figcaption {
 .weatherGallery {
     display: block;
     margin: 0px 0px 25px 0px;
+}
+
+/*---------------- Storm Center Form --------------*/
+form fieldset {
+    margin:2rem 0;
+    border: 1px sollid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+
+form legend {
+    color:#445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-weight: bold;
+}
+
+form label.top, label.stormInfo, label.addInfo, textarea {
+    display: block;
+    padding-top: 1rem;
+    color: #0059b3;
+    font-size: .8rem;
+}
+
+form label.top {
+    padding-bottom: 2rem;
+}
+
+form label.top input, form label.top select, form label.stormInfo input {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border:solid 1px #0059b3;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #d3f3fd6c;
+}
+
+form label.stormInfo {
+    display: block;
+    padding-bottom: 1.5rem;;
+}
+
+form label.stormInfo select {
+    padding: 2px;
+    font-size: .9rem;
+    background-color: #d3f3fd6c;
+    border:solid 1px #0059b3;
+    border-radius: 4px;
+}
+
+.rate {
+    display: block;
+    color: #0059b3;
+    font-size: .8rem;
+    height: 44px;
+    padding: 10px 0 5px 0;
+}
+
+#rating {
+    margin: 10px 0 15px 0;
+}
+
+form label.addInfo {
+    padding: 0;
+    margin: 0;
+}
+
+.danger, .addComment {
+    color: #0059b3;
+    font-size: .75em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.addComment {
+    margin-top: 15px;
+}
+
+textarea {
+    padding: 10px;
+    margin: 0;
+    height: 100px;
+    width: 100%;
+    max-width: 20rem;
+    border:solid 1px #0059b3;
+    border-radius: 4px;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #0059b3;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
 }
