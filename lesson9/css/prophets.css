@@ -1,20 +1,23 @@
 .prophets {
+    display: block;
     box-shadow: 0 0 15px #00264d;
-    margin: 30px;
     background-color: rgb(247, 247, 247);
+    padding: 10px;
+    margin: 10px;
 }
 
 section {
     border: 1px solid rgb(231, 231, 231);
+    margin: 20px;
     padding: 10px;
-    margin: 25px;
     background-color: rgb(250, 233, 210);
 
 }
 
 h1 {
     text-align: center;
-    padding: 20px 0 5px 0;
+    margin: 0;
+    padding: 25px;
     color: rgb(75, 49, 0);
 
 }
@@ -40,5 +43,8 @@ img {
     box-shadow: 0 0 20px #00264d;
     margin-bottom: 10px;
     margin-top: 20px;
-    max-width: 90%;
+    max-width: 336px;
+    max-height: auto;
 }
+
+
