@@ -1,0 +1,44 @@
+.prophets {
+    box-shadow: 0 0 15px #00264d;
+    margin: 30px;
+    background-color: rgb(247, 247, 247);
+}
+
+section {
+    border: 1px solid rgb(231, 231, 231);
+    padding: 10px;
+    margin: 25px;
+    background-color: rgb(250, 233, 210);
+
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0 5px 0;
+    color: rgb(75, 49, 0);
+
+}
+
+h2 {
+    text-align: center;
+    padding: 5px 0 10px 0;
+    margin: 0;
+    color: rgb(110, 73, 5);
+
+}
+
+p {
+    text-align: center;
+    margin: 2px 0 2px 0;
+    color: rgb(75, 49, 0);
+
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px #00264d;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    max-width: 90%;
+}
