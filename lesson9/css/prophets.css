@@ -54,6 +54,7 @@ img {
         display: grid;        
         grid-template-columns: 1fr 1fr;
         max-width: 780px;
+        grid-auto-columns: auto;
    
     }
 }
