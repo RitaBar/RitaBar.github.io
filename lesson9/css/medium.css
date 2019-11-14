@@ -86,5 +86,21 @@
 
     }
     
+    .towns {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        max-width: 767px;
+    }
+
+    .towns section {
+        max-width: 760px;
+    }
+
+    .towns h2 {
+        padding: .8rem;
+    }
+
+
 
 }

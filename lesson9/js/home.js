@@ -14,7 +14,7 @@ fetch(requestURL)
         
         let town = document.createElement('section');
         let h2 = document.createElement('h2');
-        let p1 = document.createElement('p');
+        let h3 = document.createElement('h3');
         let p2 = document.createElement('p');
         let p3 = document.createElement('p');
         let p4 = document.createElement('p');
@@ -22,7 +22,7 @@ fetch(requestURL)
     
 
         h2.textContent = towns[i].name;
-        p1.textContent = towns[i].motto;
+        h3.textContent = towns[i].motto;
         p2.textContent = "Year Founded: " + towns[i].yearFounded;
         p3.textContent = "Current Population: " + towns[i].currentPopulation;
         p4.textContent = "Average Rainfall: " + towns[i].averageRainfall + " inches";
@@ -30,8 +30,10 @@ fetch(requestURL)
         image.setAttribute('alt', "photo of "+ towns[i].name);
         
         town.appendChild(h2);
-        town.appendChild(p1);
+        town.appendChild(h3);
         town.appendChild(p2);
+        town.appendChild(p3);
+        town.appendChild(p4);
         town.appendChild(image)
 
         document.querySelector('div.towns').appendChild(town);

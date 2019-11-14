@@ -179,7 +179,9 @@ p {
 
 .herodiv img {
     max-width: 100%;
-    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;;
 }
 
 .wsummary {
@@ -218,7 +220,7 @@ p {
 
 .article img{
     max-width: 100%;
-    height: auto;
+    max-height: 511px;
     float: none;
 }
 /*---------------- contact info --------------*/
@@ -372,4 +374,28 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left: green solid 6px;
+}
+
+/*---------------- Home Page --------------*/
+
+.towns {
+    display: block;
+    padding: 10px;
+    margin: 20px;
+}
+
+.towns p, h3, img {
+    text-align: center;
+}
+
+.towns section {
+    background-color: #d3f3fd6c;
+    border: 2px solid #0059b3;
+    margin: 20px;
+    max-width: 500px;
+
+}
+
+.towns p {
+    font-size: 1em; 
 }

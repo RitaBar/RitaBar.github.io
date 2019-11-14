@@ -4,7 +4,7 @@
     }
 
     main, footer {
-        max-width: 900px;
+        max-width: 1200px;
     }
 
     .article img {
@@ -18,11 +18,23 @@
     .weatherGallery {
         max-width: 900px;
         grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
         padding: 15px;
     }
 
 .shadow:hover {
     box-shadow: 0 0 20px #00264d;
+}
+
+.towns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    max-width: 1150px;
+}
+
+.towns section {
+    width: 310px;
 }
 
 }
