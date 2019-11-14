@@ -95,12 +95,11 @@
 
     .towns section {
         max-width: 760px;
+        grid-templace-columns: 1fr 1fr;
     }
 
     .towns h2 {
         padding: .8rem;
     }
-
-
 
 }
