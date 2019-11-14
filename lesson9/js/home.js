@@ -13,13 +13,14 @@ fetch(requestURL)
         if (towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs") { 
         
         let town = document.createElement('section');
+        let data = document.createElement('div');
         let h2 = document.createElement('h2');
         let h3 = document.createElement('h3');
         let p2 = document.createElement('p');
         let p3 = document.createElement('p');
         let p4 = document.createElement('p');
         let image = document.createElement('img');
-    
+
 
         h2.textContent = towns[i].name;
         h3.textContent = towns[i].motto;
@@ -28,7 +29,9 @@ fetch(requestURL)
         p4.textContent = "Average Rainfall: " + towns[i].averageRainfall + " inches";
         image.setAttribute('src', "images/" + towns[i].photo);
         image.setAttribute('alt', "photo of "+ towns[i].name);
-        
+        image.setAttribute('class', 'townimage');
+        data.setAttribute('class', 'towndata');
+
         town.appendChild(h2);
         town.appendChild(h3);
         town.appendChild(p2);

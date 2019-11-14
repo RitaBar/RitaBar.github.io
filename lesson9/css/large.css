@@ -31,10 +31,16 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     max-width: 1150px;
+    min-width: 759px;
 }
 
 .towns section {
     width: 310px;
 }
+
+.towns p, .towns h2, .towns h3 {
+    text-align: center;
+}
+
 
 }

@@ -378,6 +378,18 @@ form label.top input:required:valid {
 
 /*---------------- Home Page --------------*/
 
+.homeArticle {
+    padding: .75rem;
+    border: 1px solid #555;
+}
+
+
+.homeArticle img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .towns {
     display: block;
     padding: 10px;
@@ -400,10 +412,13 @@ form label.top input:required:valid {
     font-size: 1em; 
 }
 
-.towns img {
+.towns img  {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
 }
+
+
+
 
