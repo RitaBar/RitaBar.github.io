@@ -98,7 +98,7 @@
     .towns section {
         max-width: 750px;
         display: flex;
-        flex-direction: columns;
+        flex-direction: column;
     }
     
     .towns section:nth-child(odd) {
