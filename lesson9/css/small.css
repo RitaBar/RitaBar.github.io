@@ -402,7 +402,7 @@ form label.top input:required:valid {
 
 .towns section {
     background-color: #d3f3fd6c;
-    border: 2px solid #0059b3;
+    border: 1px solid #0059b3;
     margin: 20px;
     max-width: 500px;
 }
