@@ -32,11 +32,12 @@ fetch(requestURL)
         image.setAttribute('class', 'townimage');
         data.setAttribute('class', 'towndata');
 
-        town.appendChild(h2);
-        town.appendChild(h3);
-        town.appendChild(p2);
-        town.appendChild(p3);
-        town.appendChild(p4);
+        data.appendChild(h2);
+        data.appendChild(h3);
+        data.appendChild(p2);
+        data.appendChild(p3);
+        data.appendChild(p4);
+        town.appendChild(data);
         town.appendChild(image)
 
         document.querySelector('div.towns').appendChild(town);

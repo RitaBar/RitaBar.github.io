@@ -383,11 +383,11 @@ form label.top input:required:valid {
     border: 1px solid #555;
 }
 
-
 .homeArticle img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
 }
 
 .towns {
@@ -405,11 +405,21 @@ form label.top input:required:valid {
     border: 2px solid #0059b3;
     margin: 20px;
     max-width: 500px;
-
 }
 
 .towns p {
-    font-size: 1em; 
+    font-size: 1em;
+    margin: 0; 
+    padding: 1px;
+}
+
+.towns h2 {
+    margin: 20px 0 0 0;
+}
+
+.towns h3 {
+    margin: 0;
+    padding: 0 0 25px 0;
 }
 
 .towns img  {
@@ -417,6 +427,7 @@ form label.top input:required:valid {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 
