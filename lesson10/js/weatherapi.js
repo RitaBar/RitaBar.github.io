@@ -28,6 +28,7 @@ fetch(currentWeatherApiURL)
     calcWindChill();
   });
 
+  
 fetch(forecastApiURL)
   .then((response) => response.json())
   .then((jsObject) => {
