@@ -189,8 +189,8 @@ p {
     position: absolute;
     top: 30px;
     left: 30px;
-    background: #c3f0ffa4;
-    color: #004181;
+    background: #c3f0ff;
+    color: #005ab3;
     padding: .5rem;
     box-shadow: 0 0 30px #00264d;
     opacity: .9;
@@ -215,12 +215,14 @@ p {
     display: block;
     border: 1px solid #0059b3;
     margin: 30px auto;
+    padding: 5px;
 }
 
 .article img{
-    max-width: 100%;
-    height: auto;
+    max-width: 96%;
+    max-height: 511px;
     float: none;
+    margin: 5px;
 }
 /*---------------- contact info --------------*/
 .socialMediaLogo {
@@ -374,3 +376,61 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
+
+/*---------------- Home Page --------------*/
+
+.homeArticle {
+    padding: .75rem;
+    border: 1px solid #555;
+}
+
+.homeArticle img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.towns {
+    display: block;
+    padding: 10px;
+    margin: 20px;
+}
+
+.towns p, h3, .wireframe {
+    text-align: center;
+}
+
+.towns section {
+    background-color: #d3f3fd6c;
+    border: 1px solid #0059b3;
+    margin: 20px;
+    max-width: 500px;
+}
+
+.towns p {
+    font-size: 1em;
+    margin: 0; 
+    padding: 1px;
+}
+
+.towns h2 {
+    margin: 20px 0 0 0;
+}
+
+.towns h3 {
+    margin: 0;
+    padding: 0 0 25px 0;
+}
+
+.towns img  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+
+
