@@ -28,7 +28,7 @@ fetch(currentWeatherApiURL)
     calcWindChill();
   });
 
-  
+
 fetch(forecastApiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -51,6 +51,7 @@ fetch(forecastApiURL)
 
       document.getElementById(day).textContent = dayName;
       document.getElementById(icon).setAttribute('src', imagesrc);
+      document.getElementById(icon).setAttribute('alt', desc);
       document.getElementById(temp).textContent = fiveDayItems[i].main.temp;
 
     }
