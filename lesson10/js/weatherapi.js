@@ -24,5 +24,8 @@ weatherObject.onload = function() {
   document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
   document.getElementById('humidity').innerHTML= weatherInfo.main.humidity;
   document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;
+  document.getElementById('windSpeed').textContent = weatherObject.wind.speed;
+
+  calcWindChill();
 
 } // end of onload
