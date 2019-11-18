@@ -5,7 +5,7 @@ weatherObject.send();
 weatherObject.onload = function() {
   let weatherInfo = JSON.parse(weatherObject.responseText);
   console.log(weatherInfo);
-  
+
 } // end of onload
 
 
@@ -67,4 +67,4 @@ fetch(forecastApiURL)
       document.getElementById(temp).textContent = fiveDayItems[i].main.temp;
 
     }
-  });
+  });*/
