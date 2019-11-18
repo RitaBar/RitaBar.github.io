@@ -6,6 +6,11 @@ weatherObject.onload = function() {
   let weatherInfo = JSON.parse(weatherObject.responseText);
   console.log(weatherInfo);
 
+  document.getElementById('currentCondition').innerHTML = weatherInfo.weather[0].main;
+  document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
+  document.getElementById('humidity').innerHTML= weatherInfo.main.humidity;
+  document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;
+ 
   function calcWindChill() {
     var temp = parseFloat(document.getElementById('currentTemp').textContent);
     var speed = parseFloat(document.getElementById('windSpeed').textContent);
@@ -18,14 +23,6 @@ weatherObject.onload = function() {
       document.getElementById('wChill').textContent = "NA";
     }
   }
-  
-
-  document.getElementById('currentCondition').innerHTML = weatherInfo.weather[0].main;
-  document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
-  document.getElementById('humidity').innerHTML= weatherInfo.main.humidity;
-  document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;
-  document.getElementById('windSpeed').textContent = weatherObject.wind.speed;
-
   calcWindChill();
 
 } // end of onload
