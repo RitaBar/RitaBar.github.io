@@ -5,9 +5,9 @@ weatherObject.onload = function() {
   let weatherInfo = JSON.parse(weatherObject.responseText);
   console.log(weatherInfo);
 
-  document.getElementById('currentCondition').textContent = jsObject.weather[0].main;
-  document.getElementById('currentTemp').textContent = jsObject.main.temp;
-  document.getElementById('humidity').textContent = jsObject.main.humidity;
-  document.getElementById('windSpeed').textContent = jsObject.wind.speed;
-  
+  document.getElementById('currentCondition').textContent = weatherObject.weather[0].main;
+  document.getElementById('currentTemp').textContent = weatherObject.main.temp;
+  document.getElementById('humidity').textContent = weatherObject.main.humidity;
+  document.getElementById('windSpeed').textContent = weatherObject.wind.speed;
+
 } // end of onload
