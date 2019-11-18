@@ -67,4 +67,4 @@ fetch(forecastApiURL)
       document.getElementById(temp).textContent = fiveDayItems[i].main.temp;
 
     }
-  });*/
+  }); */
