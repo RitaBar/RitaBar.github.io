@@ -37,7 +37,6 @@
         display: block;
         text-align: center;
         margin: 20px 20px 50px 20px;
-        padding: 0;
     }
 
     .forecastContainer h3 {
@@ -50,6 +49,8 @@
         grid-template-columns: auto auto auto auto auto;
         margin: 0px auto;
         padding: 15px;
+        align-self: center;
+        justify-self: center;
     }
 
     .days {
