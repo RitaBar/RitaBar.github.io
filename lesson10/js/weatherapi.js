@@ -26,3 +26,36 @@ weatherObject.onload = function() {
   calcWindChill();
 
 } // end of onload
+
+const days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+
+const forecastObject = new XMLHttpRequest();
+forecastObjec.open ("GET","//api.openweathermap.org/data/2.5/forecast?id=5604473&temp&units=imperial&APPID=35288c8a9bf8fbe38d102b914f4bd7b1", true );
+forecastObjec.send();
+forecastObject.onload = function() {
+  let forecastInfo = JSON.parse(forecastObjec.responseText);
+  console.log(forecastInfo);
+
+  var forecastItems = forecastObject.list;
+  var fiveDayItems = forecastItems.filter(function (item) {
+    return item.dt_txt.includes("18:00:00");
+  });
+  
+  for (let i = 0; i < (fiveDayItems.length); ++i) {
+    var day = "day" + (i+1);
+    var icon = "icon" + (i+1);
+    var temp = "temp" + (i+1);
+  
+    var d = new Date(fiveDayItems[i].dt_txt);
+    var dayName = days[d.getDay()];
+  
+    var imagesrc = 'https://openweathermap.org/img/w/' + fiveDayItems[i].weather[0].icon + '.png';
+  
+    document.getElementById(day).textContent = dayName;
+    document.getElementById(icon).setAttribute('src', imagesrc);
+    document.getElementById(icon).setAttribute('alt', desc);
+    document.getElementById(temp).textContent = fiveDayItems[i].main.temp;
+ 
+
+} // end of onload
+
