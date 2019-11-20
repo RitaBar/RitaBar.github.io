@@ -33,8 +33,8 @@ const forecastObject = new XMLHttpRequest();
 forecastObject.open ("GET","//api.openweathermap.org/data/2.5/forecast?id=5604473&temp&units=imperial&APPID=35288c8a9bf8fbe38d102b914f4bd7b1", true );
 forecastObject.send();
 forecastObject.onload = function() {
-  let forecastInfo = JSON.parse(forecastObject.responseText);
-  console.log(forecastInfo);
+  let forecastItems = JSON.parse(forecastObject.responseText);
+  console.log(forecastItems);
 
   var forecastItems = forecastObject.list;
   var fiveDayItems = forecastItems.filter(function (item) {
