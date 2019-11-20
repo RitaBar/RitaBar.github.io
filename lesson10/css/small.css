@@ -130,7 +130,6 @@ h2 {
     font-size: 1.75em;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-
 }
 
 h3 {
@@ -139,6 +138,7 @@ h3 {
     font-family: 'Poppins', sans-serif;
     color: #005ab3;
     margin: .5rem 2%;
+    text-align: center;    
 }
 
 h4,
