@@ -49,7 +49,7 @@ forecastObject.onload = function() {
     var d = new Date(fiveDayItems[i].dt_txt);
     var dayName = days[d.getDay()];
   
-    var imagesrc = 'https://openweathermap.org/img/w/' + fiveDayItems[i].weather[0].icon + '.png';
+    var imagesrc = '//openweathermap.org/img/w/' + fiveDayItems[i].weather[0].icon + '.png';
   
     document.getElementById(day).textContent = dayName;
     document.getElementById(icon).setAttribute('src', imagesrc);
