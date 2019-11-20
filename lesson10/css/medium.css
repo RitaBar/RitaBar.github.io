@@ -37,6 +37,7 @@
         display: block;
         text-align: center;
         margin: 20px 20px 50px 20px;
+        justify-content: center;
     }
 
     .forecastContainer h3 {
