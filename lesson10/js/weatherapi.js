@@ -55,7 +55,6 @@ forecastObject.onload = function() {
     document.getElementById(icon).setAttribute('src', imagesrc);
     document.getElementById(icon).setAttribute('alt', desc);
     document.getElementById(temp).textContent = fiveDayItems[i].main.temp;
- 
-
-} // end of onload
-
+  } 
+  
+}// end of onload
