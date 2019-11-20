@@ -30,8 +30,8 @@ weatherObject.onload = function() {
 const days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
 const forecastObject = new XMLHttpRequest();
-forecastObjec.open ("GET","//api.openweathermap.org/data/2.5/forecast?id=5604473&temp&units=imperial&APPID=35288c8a9bf8fbe38d102b914f4bd7b1", true );
-forecastObjec.send();
+forecastObject.open ("GET","//api.openweathermap.org/data/2.5/forecast?id=5604473&temp&units=imperial&APPID=35288c8a9bf8fbe38d102b914f4bd7b1", true );
+forecastObject.send();
 forecastObject.onload = function() {
   let forecastInfo = JSON.parse(forecastObjec.responseText);
   console.log(forecastInfo);
@@ -56,5 +56,5 @@ forecastObject.onload = function() {
     document.getElementById(icon).setAttribute('alt', desc);
     document.getElementById(temp).textContent = fiveDayItems[i].main.temp;
   } 
-  
+
 }// end of onload
