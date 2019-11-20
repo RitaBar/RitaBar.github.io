@@ -50,7 +50,7 @@ forecastObject.onload = function() {
     var dayName = days[d.getDay()];
   
     var imagesrc = '//openweathermap.org/img/w/' + fiveDayItems[i].weather[0].icon + '.png';
-  
+    var desc = '//openweathermap.org/img/w/' + fiveDayItems[i].weather[0].description;
     document.getElementById(day).textContent = dayName;
     document.getElementById(icon).setAttribute('src', imagesrc);
     document.getElementById(icon).setAttribute('alt', desc);
