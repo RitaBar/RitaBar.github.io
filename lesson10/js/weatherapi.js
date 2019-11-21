@@ -9,7 +9,7 @@ weatherObject.onload = function() {
   document.getElementById('currentCondition').innerHTML = weatherInfo.weather[0].main;
   document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp.toFixed(0);
   document.getElementById('humidity').innerHTML= weatherInfo.main.humidity;
-  document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed.toFixed(0);
+  document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;
  
   function calcWindChill() {
     var temp = parseFloat(document.getElementById('currentTemp').textContent);
