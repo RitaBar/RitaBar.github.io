@@ -7,7 +7,7 @@ weatherObject.onload = function() {
   console.log(weatherInfo);
 
   document.getElementById('currentCondition').innerHTML = weatherInfo.weather[0].main;
-  document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp.toFixed(0);
+  document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
   document.getElementById('humidity').innerHTML= weatherInfo.main.humidity;
   document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;
  
