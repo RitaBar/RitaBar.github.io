@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Presents - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson 9 for Rita Bartholomew - CIT 230: Web Frontend Development at BYU-Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/iconfinder_icon-59_667368.png" alt="icon which includes a sun, cloud, and thermometer">
+        </picture>
+
+        <section class="headings">
+            <h1>Weather Presents</h1>
+            <div class="motto">Gifts for Southeast Idaho</div>
+        </section>
+
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Welcome to Weather Presents</h2>
+
+        <div class="homeArticle">
+            <picture>
+                <source media="(min-width:960px)" srcset="images/900px-vidar-nordli-mathisen-9aVERfNAMBU-unsplash.jpg">
+                <source media="(min-width:640px)" srcset="images/760px-vidar-nordli-mathisen-9aVERfNAMBU-unsplash.jpg">
+                <source media="(min-width:500px)" srcset="images/600px-vidar-nordli-mathisen-9aVERfNAMBU-unsplash.jpg">
+                <img src="images/600px-vidar-nordli-mathisen-9aVERfNAMBU-unsplash.jpg" alt="park after snow storm"
+                    style="width:auto;">
+            </picture>
+            <p>An early storm dropped several inches of snow on our area today. This gift of snow is exciting to
+                children and those who are young at heart. Snowmen and snow angels are cropping up all over the area.
+                Deep in the parks snowforts are appearing and snowballs are flying.</p>
+            <p>Ice skating is a fun activity to engage in. Please check the ice on the lakes and ponds to be sure it is
+                thick enough to hold your weight without cracking before venturing out onto it.</p>
+            <p>For those who don't like the cold, it's a good time to stay indoors and have a drink of hot chocolate.
+                While looking out the window, it is easy to see other gifts the storm left. There's snow resting softly
+                on the trees and beautiful icicles hanging from leaves and branches.</p>
+            <p>If you need to drive, be careful and leave in plenty of time to get where you need to go. Watch out
+                for slick or icy spots.</p>
+        </div>
+
+        <div class="towns"></div>
+
+        <div class="wireframe">
+            <a href="images/small-wireframe.jpg">small wireframe</a><br>
+            <a href="images/medium-wireframe.jpg">medium wireframe</a><br>
+            <a href="images/large-wireframe.jpg">large wireframe</a><br><br>
+        </div>
+    </main>
+
+    <footer>
+        &copy; <span id="copyyear"></span> | Weather Presents | Rita F. Bartholomew <br>
+        <span id="currentDate"></span>
+    </footer>
+    <script src="js/dateToday.js"></script>
+    <script src="js/year.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/imagehandling.js"></script>
+    <script src="js/home.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Trirong', 'Poppins', 'Acme']
+            }
+        });
+    </script>
+</body>
+
+</html>
