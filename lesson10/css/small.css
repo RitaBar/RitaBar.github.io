@@ -113,9 +113,13 @@ footer {
     color: #00264d;
 }
 
+footer a:link {
+    color: #0059b3;
+}
+
 
 h1 h2 {
-    color: #004080;
+    color: #004bd6;
 }
 
 h1 {
