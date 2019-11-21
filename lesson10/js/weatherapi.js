@@ -7,9 +7,9 @@ weatherObject.onload = function() {
   console.log(weatherInfo);
 
   document.getElementById('currentCondition').innerHTML = weatherInfo.weather[0].main;
-  document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
+  document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp.toFixed(0);
   document.getElementById('humidity').innerHTML= weatherInfo.main.humidity;
-  document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;
+  document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed.toFixed(0);
  
   function calcWindChill() {
     var temp = parseFloat(document.getElementById('currentTemp').textContent);
@@ -54,7 +54,7 @@ forecastObject.onload = function() {
     document.getElementById(day).textContent = dayName;
     document.getElementById(icon).setAttribute('src', imagesrc);
     document.getElementById(icon).setAttribute('alt', desc);
-    document.getElementById(temp).textContent = fiveDayItems[i].main.temp;
+    document.getElementById(temp).textContent = fiveDayItems[i].main.temp.toFixed(0);
   } 
 
 }// end of onload
