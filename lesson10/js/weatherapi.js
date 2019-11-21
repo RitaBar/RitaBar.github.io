@@ -4,7 +4,7 @@ weatherObject.open ("GET","//api.openweathermap.org/data/2.5/weather?id=5604473&
 weatherObject.send();
 weatherObject.onload = function() {
   let weatherInfo = JSON.parse(weatherObject.responseText);
-  console.log(weatherInfo);
+  //console.log(weatherInfo);
 
   document.getElementById('currentCondition').innerHTML = weatherInfo.weather[0].main;
   document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
@@ -34,7 +34,7 @@ forecastObject.open ("GET","//api.openweathermap.org/data/2.5/forecast?id=560447
 forecastObject.send();
 forecastObject.onload = function() {
   let forecastInfo = JSON.parse(forecastObject.responseText);
-  console.log(forecastInfo);
+  //console.log(forecastInfo);
 
   var forecastItems = forecastInfo.list;
   var fiveDayItems = forecastItems.filter(function (item) {
