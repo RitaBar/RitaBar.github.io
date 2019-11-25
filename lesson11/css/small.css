@@ -46,6 +46,7 @@ nav li a {
     padding: 0.75rem;
     text-decoration: none;
     font-size: 0.95rem;
+    color: #005ab3;
 }
 
 .active {
@@ -101,7 +102,7 @@ footer {
 }
 
 footer {
-    background-color: #c3f0ff;
+    background-color: #c3f0ffbe;
     color: #00264d;
 }
 
@@ -110,9 +111,13 @@ footer a:link {
     text-decoration: underline;
 }
 
+footer a:hover {
+    background-color: #d3f3fd6c;
+}
 
-h1 h2 {
-    color: #004bd6;
+
+h1, h2, h3 {
+    color: #005ab3;
 }
 
 h1 {
@@ -133,7 +138,6 @@ h3 {
     font-size: 1.25em;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    color: #005ab3;
     margin: .5rem 2%;
     text-align: center;    
 }
@@ -394,7 +398,7 @@ form label.top input:required:valid {
     margin: 20px;
 }
 
-.towns p, h3, .wireframe {
+.towns p, h3 {
     text-align: center;
 }
 
@@ -428,6 +432,25 @@ form label.top input:required:valid {
     padding-top: 20px;
 }
 
+.events ul {
+    list-style-type: none;
+    padding: 10px 30px 0px 30px;
+    margin: auto;
 
+}
 
+.events li {
+    padding: 1px;
+    text-align: center;
+    color: #005ab3;
+}
 
+.events {
+        display: block;
+        border: 1px solid #0059b3;
+        margin: auto;
+        padding: 25px;
+        max-width: 400px;
+        background-color: #c3f0ff83;
+
+}
