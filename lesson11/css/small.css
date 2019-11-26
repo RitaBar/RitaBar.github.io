@@ -116,7 +116,7 @@ footer a:hover {
 }
 
 
-h1, h2, h3 {
+h2, h3 {
     color: #005ab3;
 }
 
@@ -126,18 +126,19 @@ h1 {
     font-family: 'Trirong', serif;
     line-height: 100%;
     margin: .5rem;
+    color: #ffe44d;
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 1.8em;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 1.6em;
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Acme', sans-serif;
     margin: .5rem 2%;
     text-align: center;    
 }
@@ -436,6 +437,7 @@ form label.top input:required:valid {
     list-style-type: none;
     padding: 10px 30px 0px 30px;
     margin: auto;
+    
 
 }
 
@@ -443,6 +445,8 @@ form label.top input:required:valid {
     padding: 1px;
     text-align: center;
     color: #005ab3;
+    font-size: 1.25em;
+    font-family: 'Poppins', sans-serif;
 }
 
 .events {
@@ -452,5 +456,5 @@ form label.top input:required:valid {
         padding: 25px;
         max-width: 400px;
         background-color: #c3f0ff83;
-
 }
+
