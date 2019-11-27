@@ -114,6 +114,8 @@ footer a:link {
 
 footer a:hover {
     background-color: #d3f3fd6c;
+    color: #0059b3;
+    text-decoration: none;
 }
 
 
