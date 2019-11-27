@@ -44,15 +44,22 @@
         <h2>Preston, Idaho</h2>
         <div class="herodiv">
             <picture>
-                <source media="(min-width:960px)" srcset="images/preston-photos/900px-aerial-aerial-shot-architecture-3030272.jpg">
-                <source media="(min-width:640px)" srcset="images/preston-photos/760px-aerial-aerial-shot-architecture-3030272.jpg">
-                <source media="(min-width:500px)" srcset="images/preston-photos/600px-aerial-aerial-shot-architecture-3030272.jpg">
+                <source media="(min-width:960px)"
+                    srcset="images/preston-photos/900px-aerial-aerial-shot-architecture-3030272.jpg">
+                <source media="(min-width:640px)"
+                    srcset="images/preston-photos/760px-aerial-aerial-shot-architecture-3030272.jpg">
+                <source media="(min-width:500px)"
+                    srcset="images/preston-photos/600px-aerial-aerial-shot-architecture-3030272.jpg">
                 <img src="images/preston-photos/600px-aerial-aerial-shot-architecture-3030272.jpg.jpg"
                     alt="aerial shot of town" style="width:auto;">
             </picture>
             <section class="wsummary">
-                <div class="summaryInfo1"><h3>Weather&nbsp;</h3></div>
-                <div class="summaryInfo2"><h3>Summary&nbsp;&nbsp;&nbsp;</h3></div>
+                <div class="summaryInfo1">
+                    <h3>Weather&nbsp;</h3>
+                </div>
+                <div class="summaryInfo2">
+                    <h3>Summary&nbsp;&nbsp;&nbsp;</h3>
+                </div>
                 <div class="summaryInfo1">Currently:&nbsp;</div>
                 <div class="summaryInfo2"><span id="currentCondition">condition</span></div>
                 <div class="summaryInfo1">Currently: &nbsp;</div>
@@ -92,7 +99,8 @@
         <div class="article">
             <img src="images/preston-photos/chatting-dog-faces-745045-600px.jpg" alt="picnic in the park">
             <h3>Mix and Mingle </h3>
-            <p>Join with friends and family each week on Saturday. Pancakes will be served at the city park pavilion.</p>
+            <p>Join with friends and family each week on Saturday. Pancakes will be served at the city park pavilion.
+            </p>
             <p>We gather every week. As an anonymous British poet said:<br>
                 "Whether the weather be fine<br>
                 Or whether the weather be not,<br>
@@ -101,17 +109,20 @@
                 We'll weather the weather<br>
                 Whatever the weather,<br>
                 Whether we like it or not."
-                </p>
-                <p>This weekly gathering began as an opportunity to meet with city leaders. While it still provides this
-                        type of discussions, it also provides a way to meet with old friends and find new ones.</p>
-                <p>Come join us.</p>
+            </p>
+            <p>This weekly gathering began as an opportunity to meet with city leaders. While it still provides this
+                type of discussions, it also provides a way to meet with old friends and find new ones.</p>
+            <p>Come join us.</p>
         </div>
 
         <div class="events"></div>
+    </main>
 
+    <footer>
         <div class="contactInfo">
             <div class="map">
-                <img src="images/preston-photos/Preston-Idaho-map.jpg" alt="map of southeast Idaho with Preston highlighted">
+                <img src="images/preston-photos/Preston-Idaho-map.jpg"
+                    alt="map of southeast Idaho with Preston highlighted">
             </div>
             <div>
                 <h3>Weather Presents</h3>
@@ -127,25 +138,28 @@
                         src="images/iconfinder_social_media_applications_4-pinterest_4102576.png" alt="pinterest icon">
                 </p>
             </div>
-
         </div>
 
-    </main>
-
-    <footer>
-        &copy; <span id="copyyear"></span> | Weather Presents | Rita F. Bartholomew <br>
-        Weather information through <a href="http://api.openweathermap.org/">Open Weather Map</a><br>
-        <span id="currentDate"></span>
+        <div class="footerInfo">
+            &copy; <span id="copyyear"></span> | Weather Presents | Rita F. Bartholomew <br>
+            Weather information through <a href="http://api.openweathermap.org/">Open Weather Map</a><br>
+            <span id="currentDate"></span>
+        </div>
     </footer>
+
     <script src="js/dateToday.js"></script>
     <script src="js/year.js"></script>
     <script src="js/toggle.js"></script>
     <script src="js/bannerad.js"></script>
-    <script src="js/weatherapi-preston.js"></script> 
+    <script src="js/weatherapi-preston.js"></script>
     <script src="js/events-preston.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
-        WebFont.load({google: {families: ['Trirong', 'Poppins', 'Acme']}});
+        WebFont.load({
+            google: {
+                families: ['Trirong', 'Poppins', 'Acme']
+            }
+        });
     </script>
 </body>
 

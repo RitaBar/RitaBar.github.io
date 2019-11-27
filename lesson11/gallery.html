@@ -40,65 +40,72 @@
     <main>
         <h2>Weather Gallery</h2>
         <div class="weatherGallery">
-        <figure class="shadow">
-            <img src="images/gallery-photos/gPholder.jpg"
-                data-src="images/gallery-photos/600px-austin-schmid-zQ-y4Gj8194-unsplash.jpg" alt="">
-            <figcaption>fog in the mountains</figcaption>
-        </figure>
-        <figure class="shadow">
-            <img src="images/gallery-photos/gPholder.jpg"
-                data-src="images/gallery-photos/600px-donald-giannatti-jxqC9gchBb4-unsplash.jpg" alt="">
-            <figcaption>sunlight through clouds</figcaption>
-        </figure>
-        <figure class="shadow">
-            <img src="images/gallery-photos/gPholder.jpg"
-                data-src="images/gallery-photos/600px-duncan-maloney-dg5KvcVv7tU-unsplash.jpg" alt="">
-            <figcaption>lightning strikes</figcaption>
-        </figure>
-        <figure class="shadow">
-            <img src="images/gallery-photos/gPholder.jpg"
-                data-src="images/gallery-photos/600px-greg-nunes-t02XukS9dUU-unsplash.jpg" alt="">
-            <figcaption>rainbow in the sky</figcaption>
-        </figure>
-        <figure class="shadow">
-            <img src="images/gallery-photos/gPholder.jpg"
-                data-src="images/gallery-photos/600px-jeremy-bishop-pnSwnfQpPf4-unsplash.jpg" alt="">
-            <figcaption>clouds over desert mountains</figcaption>
-        </figure>
-        <figure class="shadow">
-            <img src="images/gallery-photos/gPholder.jpg"
-                data-src="images/gallery-photos/600px-scott-ogle-dxZfq6Xuz5c-unsplash.jpg" alt="">
-            <figcaption>storm clouds</figcaption>
-        </figure>
-        <figure class="shadow">
-            <img src="images/gallery-photos/gPholder.jpg"
-                data-src="images/gallery-photos/600px-stanley-dai-QLfjlyEamV4-unsplash.jpg" alt="">
-            <figcaption>snow-covered forest</figcaption>
-        </figure>
-        <figure class="shadow">
-            <img src="images/gallery-photos/gPholder.jpg"
-                data-src="images/gallery-photos/600px-taylor-smith-TawjNbs35C0-unsplash.jpg" alt="">
-            <figcaption>wind-swept clouds</figcaption>
-        </figure>
-        <figure class="shadow">
-            <img src="images/gallery-photos/gPholder.jpg"
-                data-src="images/gallery-photos/600px-vidar-nordli-mathisen-k8dTFW5ORlc-unsplash.jpg" alt="">
-            <figcaption>puffy clouds in a blue sky</figcaption>
-        </figure class="shadow">
-    </div>
+            <figure class="shadow">
+                <img src="images/gallery-photos/gPholder.jpg"
+                    data-src="images/gallery-photos/600px-austin-schmid-zQ-y4Gj8194-unsplash.jpg" alt="">
+                <figcaption>fog in the mountains</figcaption>
+            </figure>
+            <figure class="shadow">
+                <img src="images/gallery-photos/gPholder.jpg"
+                    data-src="images/gallery-photos/600px-donald-giannatti-jxqC9gchBb4-unsplash.jpg" alt="">
+                <figcaption>sunlight through clouds</figcaption>
+            </figure>
+            <figure class="shadow">
+                <img src="images/gallery-photos/gPholder.jpg"
+                    data-src="images/gallery-photos/600px-duncan-maloney-dg5KvcVv7tU-unsplash.jpg" alt="">
+                <figcaption>lightning strikes</figcaption>
+            </figure>
+            <figure class="shadow">
+                <img src="images/gallery-photos/gPholder.jpg"
+                    data-src="images/gallery-photos/600px-greg-nunes-t02XukS9dUU-unsplash.jpg" alt="">
+                <figcaption>rainbow in the sky</figcaption>
+            </figure>
+            <figure class="shadow">
+                <img src="images/gallery-photos/gPholder.jpg"
+                    data-src="images/gallery-photos/600px-jeremy-bishop-pnSwnfQpPf4-unsplash.jpg" alt="">
+                <figcaption>clouds over desert mountains</figcaption>
+            </figure>
+            <figure class="shadow">
+                <img src="images/gallery-photos/gPholder.jpg"
+                    data-src="images/gallery-photos/600px-scott-ogle-dxZfq6Xuz5c-unsplash.jpg" alt="">
+                <figcaption>storm clouds</figcaption>
+            </figure>
+            <figure class="shadow">
+                <img src="images/gallery-photos/gPholder.jpg"
+                    data-src="images/gallery-photos/600px-stanley-dai-QLfjlyEamV4-unsplash.jpg" alt="">
+                <figcaption>snow-covered forest</figcaption>
+            </figure>
+            <figure class="shadow">
+                <img src="images/gallery-photos/gPholder.jpg"
+                    data-src="images/gallery-photos/600px-taylor-smith-TawjNbs35C0-unsplash.jpg" alt="">
+                <figcaption>wind-swept clouds</figcaption>
+            </figure>
+            <figure class="shadow">
+                <img src="images/gallery-photos/gPholder.jpg"
+                    data-src="images/gallery-photos/600px-vidar-nordli-mathisen-k8dTFW5ORlc-unsplash.jpg" alt="">
+                <figcaption>puffy clouds in a blue sky</figcaption>
+            </figure class="shadow">
+        </div>
     </main>
 
     <footer>
-        &copy; <span id="copyyear"></span> | Weather Presents | Rita F. Bartholomew <br>
-        <span id="currentDate"></span>
+        <div class="footerInfo">
+            &copy; <span id="copyyear"></span> | Weather Presents | Rita F. Bartholomew <br>
+            <span id="currentDate"></span>
+        </div>
     </footer>
+
     <script src="js/dateToday.js"></script>
     <script src="js/year.js"></script>
     <script src="js/toggle.js"></script>
     <script src="js/imagehandling.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
-        WebFont.load({google: {families: ['Trirong', 'Poppins', 'Acme']}});
+        WebFont.load({
+            google: {
+                families: ['Trirong', 'Poppins', 'Acme']
+            }
+        });
     </script>
 </body>
 

@@ -42,7 +42,8 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Contact Information</legend>
-                <label class="top">Full Name* <input type="text" name="fullname" pattern="[^\s][A-z0-9À-ž\s]{5,}" required></label>
+                <label class="top">Full Name* <input type="text" name="fullname" pattern="[^\s][A-z0-9À-ž\s]{5,}"
+                        required></label>
                 <label class="top">Email <input type="email" name="email" placeholder="someone@abcd.com"></label>
                 <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
                 <label class="top">Zipcode* <input type="number" name="zipcode" required></label>
@@ -95,16 +96,23 @@
     </main>
 
     <footer>
-        &copy; <span id="copyyear"></span> | Weather Presents | Rita F. Bartholomew <br>
-        <span id="currentDate"></span>
+        <div class="footerInfo">
+            &copy; <span id="copyyear"></span> | Weather Presents | Rita F. Bartholomew <br>
+            <span id="currentDate"></span>
+        </div>
     </footer>
+
     <script src="js/dateToday.js"></script>
     <script src="js/year.js"></script>
     <script src="js/toggle.js"></script>
     <script src="js/adjustRating.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
-        WebFont.load({google: {families: ['Trirong', 'Poppins', 'Acme']}});
+        WebFont.load({
+            google: {
+                families: ['Trirong', 'Poppins', 'Acme']
+            }
+        });
     </script>
 </body>
 

@@ -101,9 +101,10 @@ footer {
     padding: .5rem;
 }
 
-footer {
+.footerInfo {
     background-color: #c3f0ffbe;
     color: #00264d;
+    padding: 20px;
 }
 
 footer a:link {
@@ -423,6 +424,11 @@ form label.top input:required:valid {
 .towns h3 {
     margin: 0;
     padding: 0 0 25px 0;
+    font-size: 1.25em;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    margin: .5rem 2%;
+    text-align: center; 
 }
 
 .towns img  {
@@ -454,7 +460,10 @@ form label.top input:required:valid {
         border: 1px solid #0059b3;
         margin: auto;
         padding: 25px;
-        max-width: 400px;
+        max-width: 500px;
         background-color: #c3f0ff83;
 }
 
+.contactInfo {
+    background: white;
+}
