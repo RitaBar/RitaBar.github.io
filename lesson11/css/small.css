@@ -107,12 +107,12 @@ footer {
     padding: 20px;
 }
 
-.footerInfo a:link {
+footer a:link {
     color: #0059b3;
     text-decoration: underline;
 }
 
-.footerInfo a:hover {
+footer a:hover {
     background-color: #d3f3fd6c;
     color: #0059b3;
     text-decoration: none;
