@@ -1,6 +1,21 @@
+var city = document.getElementById("currentCity").textContent;
+if (city.includes("Preston")) {
+  var weatherapi = "//api.openweathermap.org/data/2.5/weather?id=5604473&temp&units=imperial&APPID=35288c8a9bf8fbe38d102b914f4bd7b1";
+  var forecastapi = "//api.openweathermap.org/data/2.5/forecast?id=5604473&temp&units=imperial&APPID=35288c8a9bf8fbe38d102b914f4bd7b1";
+}
+else if (city.includes("Soda Springs")) {
+  var weatherapi = "//api.openweathermap.org/data/2.5/weather?id=5678757&temp&units=imperial&APPID=35288c8a9bf8fbe38d102b914f4bd7b1";
+  var forecastapi = "//api.openweathermap.org/data/2.5/forecast?id=5678757&temp&units=imperial&APPID=35288c8a9bf8fbe38d102b914f4bd7b1";
+}
+
+else {
+  if  (city.includes("Fish Haven")) 
+  var weatherapi = "//api.openweathermap.org/data/2.5/weather?zip=83287,us&temp&units=imperial&APPID=35288c8a9bf8fbe38d102b914f4bd7b1";
+  var forecastapi = "//api.openweathermap.org/data/2.5/forecast?zip=83287,us&temp&units=imperial&APPID=35288c8a9bf8fbe38d102b914f4bd7b1";
+}
 
 const weatherObject = new XMLHttpRequest();
-weatherObject.open ("GET","//api.openweathermap.org/data/2.5/weather?zip=83287,us&temp&units=imperial&APPID=35288c8a9bf8fbe38d102b914f4bd7b1", true );
+weatherObject.open ("GET",weatherapi, true );
 weatherObject.send();
 weatherObject.onload = function() {
   let weatherInfo = JSON.parse(weatherObject.responseText);
@@ -27,14 +42,16 @@ weatherObject.onload = function() {
 
 } // end of onload
 
+
+
 const days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
 const forecastObject = new XMLHttpRequest();
-forecastObject.open ("GET","//api.openweathermap.org/data/2.5/forecast?zip=83287,us&temp&units=imperial&APPID=35288c8a9bf8fbe38d102b914f4bd7b1", true );
+forecastObject.open ("GET",forecastapi, true );
 forecastObject.send();
 forecastObject.onload = function() {
   let forecastInfo = JSON.parse(forecastObject.responseText);
-  console.log(forecastInfo);
+  //console.log(forecastInfo);
 
   var forecastItems = forecastInfo.list;
   var fiveDayItems = forecastItems.filter(function (item) {
