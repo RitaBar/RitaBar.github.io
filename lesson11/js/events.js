@@ -6,15 +6,28 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
 
+    var city = document.getElementById("currentCity").textContent;
+if (city.includes("Preston")) {
+  city = "Preston"
+}
+else if (city.includes("Soda Springs")) {
+  city = "Soda Springs"
+}
+
+else {
+  if  (city.includes("Fish Haven")) 
+  city = "Fish Haven"
+}
+    
     const towns = jsonObject['towns'];
 
     for (let i = 0; i <towns.length; i++ ) {
-        if (towns[i].name == "Soda Springs") { 
+        if (towns[i].name == city) { 
 
         let data = document.createElement('section');
         let h3 = document.createElement('h3');
 
-        h3.textContent = "Upcoming Events for " + towns[i].name;
+        h3.textContent = "Upcoming Events for " + city;
 
         function makeUL(array){
           //Create the list element;
