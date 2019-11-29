@@ -225,9 +225,9 @@ p {
 
 .article img{
     max-width: 96%;
-    max-height: 511px;
+    max-height: auto;
     float: none;
-    margin: 5px;
+    margin: 10px;
 }
 /*---------------- contact info --------------*/
 .socialMediaLogo {
