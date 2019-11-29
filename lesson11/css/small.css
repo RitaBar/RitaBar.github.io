@@ -386,7 +386,8 @@ form label.top input:required:valid {
 
 .homeArticle {
     padding: .75rem;
-    border: 1px solid #555;
+    border: 1px solid #0059b3;
+    ;
 }
 
 .homeArticle img {
