@@ -366,16 +366,6 @@ form label.top select
     background-color: #1e8fd60e;
 }
 
-
-.addComment {
-    color: #0072bb;
-    font-size: .75em;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 15px;
-}
-
-
 textarea {
     padding: 10px;
     margin: 0;
