@@ -68,11 +68,6 @@ a:hover {
     color: #ffd978;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #ffd978;
-    color: #0072bb;
-}
-
 .dropdown {
     display: inline-block;
 }
@@ -96,7 +91,8 @@ a:hover {
 
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #1e8fd6b7;
+    color: #014975;
 }
 
 .dropdown:hover .dropdown-content {
@@ -107,7 +103,7 @@ a:hover {
 header {
     line-height: .5;
     background-color: #0072bb;
-    color: #ffd978;
+    color: #ffba08;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,7 +165,7 @@ h1 {
     font-family: 'Cormorant', serif;
     line-height: 100%;
     margin: .5rem;
-    color: #ffd978;
+    color: #ffba08;
 }
 
 h2 {
@@ -218,7 +214,7 @@ p {
 }
 
 hr.gold {
-    border: 3px solid #ffd978;
+    border: 1px solid #ffba08;
     border-radius: 5px;
 }
 
