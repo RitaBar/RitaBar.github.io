@@ -1,4 +1,4 @@
-const requestURL = "/json/temples.json";
+const requestURL = "temples.json";
 
 fetch(requestURL)
   .then(function (response) {
@@ -9,27 +9,9 @@ fetch(requestURL)
     var temple = document.getElementById("boston").innerHTML;
       if (temple.includes("Boston")) {
       templeName = "Boston Massachusetts"
+      
     }
 
-    /*
-
-
-    var temple = document.getElementById("hartford").innerHTML;
-    if (temple.includes("Hartford")) {
-      templeName = "Hartford Connecticut"
-    }
-
-    var temple = document.getElementById("manhattan").innerHTML;
-      if (temple.includes("Manhattan")) {
-      templeName = "Manhattan New York"
-    }
-
-    var temple = document.getElementById("palmyra").innerHTML;
-      if (temple.includes("Palmyra")) {
-      templeName = "Palmyra New York"
-    }
-
-    */
     var closed = jsonObject['temples'];
 
     for (let i = 0; i < closed.length; i++) {
