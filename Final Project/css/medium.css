@@ -1,0 +1,62 @@
+@media only screen and (min-width: 40em) {
+    header img {
+        width: 85%;
+    }
+
+    main,
+    footer {
+        max-width: 760px;
+    }
+
+    nav li a {
+        padding: 12px 1px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li a {
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .wsummary {
+        font-size: 1.5vw;
+        top: 6%;
+        left: 6%;
+        
+    }
+
+    .map {
+        display: block;
+    }
+
+    .gallery {
+        max-width: 750px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .actionCall {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    /*---------------- temple page --------------*/
+ .templePage {
+    max-width: 750px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}

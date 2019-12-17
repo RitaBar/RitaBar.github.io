@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Temple Inn and Suites</title>
+    <meta name="author" content="Rita Bartholomew">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Final Project - Rita Bartholomew - CIT 230: Web Frontend Development at BYU-Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/OpenDoor.png" alt="open doors with light streaming out">
+        </picture>
+
+        <section class="headings">
+            <h1>Temple Inn and Suites</h1>
+            <div class="motto">Feels Like Home</div>
+        </section>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Reservation</a></li>
+            <li class="dropdown">
+                <a href="services.html">Services</a>
+                <div class="dropdown-content">
+                    <a href="reception.html">Reception</a>
+                    <a href="temple-missionary.html">Full-time Temple Missionary</a>
+                </div>
+            </li>
+            </li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Contact Us</h2>
+
+        <div class="contactInfo">
+
+            <div>
+                <h3>Temple Inns and Suites</h3>
+                <span><img src="images/iconfinder_navigation_1214633.png" alt="location icon">Address: 4800 Motgomery Ln
+                    #300
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Bethesda, MD 20814</span><br><br>
+                <span>&#9742;&nbsp;023-123-4567</span><br>
+                <span>&#9993;&nbsp;info@templeinnsandsuites.org</span>
+                <p><img class="socialMediaLogo" src="images/iconfinder_social_media_applications_1-facebook_4102573.png"
+                        alt="facebook icon">
+                    <img class="socialMediaLogo" src="images/iconfinder_social_media_applications_6-twitter_4102580.png"
+                        alt="twitter icon">
+                    <img class="socialMediaLogo"
+                        src="images/iconfinder_social_media_applications_4-pinterest_4102576.png" alt="pinterest icon">
+                </p>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.2333849570637!2d-77.09729013055026!3d38.98285886693419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1576082322450!5m2!1sen!2sus"
+                    width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+
+        <form method="get" action="response.html">
+            <fieldset>
+                <legend>Ask a Question or Make a Comment</legend>
+                <label class="top">Full Name* <input type="text" name="fullname" pattern="[^\s][A-z0-9À-ž\s]{5,}"
+                        required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@abcd.com"></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Zipcode* <input type="number" name="zipcode" required></label>
+                <label class="addComment">Questions or Comments<textarea name="comment"
+                        placeholder="Enter questions or comments here . . ."></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Sent Us Your Question or Comment" class="submitBtn">
+        </form>
+    </main>
+
+    <footer>
+        <div class="footerInfo">
+            &copy; <span id="copyyear"></span> | Temple Inn and Suites | Rita F. Bartholomew <br>
+            <a href="resources.html">Links to Outside Resources Used on this Site</a><br>
+            <span id="currentDate"></span>
+        </div>
+    </footer>
+
+    <script src="js/dateToday.js"></script>
+    <script src="js/year.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Cormorant', 'Montserrat']
+            }
+        });
+    </script>
+</body>
+
+</html>

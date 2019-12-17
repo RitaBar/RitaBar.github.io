@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Temple Inn and Suites</title>
+    <meta name="author" content="Rita Bartholomew">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Final Project - Rita Bartholomew - CIT 230: Web Frontend Development at BYU-Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/OpenDoor.png" alt="open doors with light streaming out">
+        </picture>
+
+        <section class="headings">
+            <h1>Temple Inn and Suites</h1>
+            <div class="motto">Feels Like Home</div>
+        </section>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li class="active"><a href="reservations.html">Reservation</a></li>
+            <li class="dropdown">
+                <a href="services.html">Services</a>
+                <div class="dropdown-content">
+                    <a href="reception.html">Reception</a>
+                    <a href="temple-missionary.html">Full-time Temple Missionary</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Reservations</h2>
+
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">Full Name* <input type="text" name="fullname" pattern="[^\s][A-z0-9À-ž\s]{5,}"
+                        required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@abcd.com"></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Zipcode* <input type="number" name="zipcode" required></label>
+                <label class="top">Home State or Country <input type="text" name="location"></label>
+            </fieldset>
+
+            <fieldset>    
+                <legend>Which Temple*</legend>        
+                <label class="temple"><input type="radio" name="temple" value="Boston Masssachusetts"> Boston Masssachusetts</label>
+                <label class="temple"><input type="radio" name="temple" value="Hartford Connecticut"> Hartford Connecticut</label>                
+                <label class="temple"><input type="radio" name="temple" value="Palmyra New York"> Palmyra New York</label>
+                <label class="temple"><input type="radio" name="temple" value="Manhattan New York"> Manhattan New York</label>  
+            </fieldset>
+
+
+            <fieldset>
+                <label class="top">Arrival Date* <input type="date" name="Date Desired" required></label>
+                <label class="top">Departure Date* <input type="date" name="Date Desired" required></label>
+                <label class="top">Type of Room* <input list="stype" name="roomType" required>
+                    <datalist id="stype">
+                        <option value="Single: one person, one or more beds">
+                        <option value="Double: two people, one or more beds">
+                        <option value="Triple: three people, two or more beds">
+                        <option value="Quad: four people, two or more beds">
+                        <option value="Queen: one or more people, queen-sized bed">
+                        <option value="King:one or more people, king-sized bed">
+                        <option value="Twin: one or more people,room with two beds">
+                        <option value="Double-double: room with two double beds">
+                        <option value="Studio: couch converts into a bed">
+                        <option value="Master Suite: living room connected to kitchen and bedroom">
+                        <option value="Connecting Rooms:rooms with individual entrance doors and connecting door between rooms ">
+                        <option value="Adjoining Rooms: room with common wall, no connecting door">
+                        <option value="Adjacent Rooms: rooms close to each other, perhaps across the hall">
+                        <option value="Reception Hall"></option>
+                    </datalist>
+                <label class="top">Number of Rooms*<input type="number" name="quantity" required></label>
+
+
+                <label class="addComment">Special Accommodations or Additional Comments<textarea name="comment"
+                        placeholder="Enter additional comments here . . ."></textarea></label>
+            </fieldset>
+
+
+
+            <input type="submit" value="Make Your Reservation" class="submitBtn">
+        </form>
+
+
+    </main>
+
+    <footer>
+        <div class="footerInfo">
+            &copy; <span id="copyyear"></span> | Temple Inn and Suites | Rita F. Bartholomew <br>
+            <a href="resources.html">Links to Outside Resources Used on this Site</a><br>
+            <span id="currentDate"></span>
+        </div>
+    </footer>
+
+    <script src="js/dateToday.js"></script>
+    <script src="js/year.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Cormorant', 'Montserrat']
+            }
+        });
+    </script>
+</body>
+
+</html>

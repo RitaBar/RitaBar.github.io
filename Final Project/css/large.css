@@ -1,0 +1,46 @@
+@media only screen and (min-width: 60em) {
+    header img {
+        width: 100%;
+    }
+
+    main, footer {
+        max-width: 900px;
+    }
+
+
+    .wsummary {
+        font-size: 1vw;
+        left: 9%;
+    }
+
+    .gallery {
+        max-width: 900px;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        padding: 15px;
+    }
+
+.shadow:hover {
+    box-shadow: 0 0 20px #00264d;
+}
+
+.templePage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    max-width: 1600px;
+    min-width: 759px;
+}
+
+.templePage section {
+    width: 330px;
+    display: block;
+}
+.tphoto img {
+    display: block;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Temple Inn and Suites</title>
+    <meta name="author" content="Rita Bartholomew">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Final Project - Rita Bartholomew - CIT 230: Web Frontend Development at BYU-Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/OpenDoor.png" alt="open doors with light streaming out">
+        </picture>
+
+        <section class="headings">
+            <h1>Temple Inn and Suites</h1>
+            <div class="motto">Feels Like Home</div>
+        </section>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Reservation</a></li>
+            <li class="dropdown">
+                <a href="services.html">Services</a>
+                <div class="dropdown-content">
+                    <a href="reception.html">Reception</a>
+                    <a href="temple-missionary.html">Full-time Temple Missionary</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div>
+            <h2>Hold Your Reception Here</h2>
+            <p>Our wedding reception halls are easily customized. We have circular as well as rectangular tables ane
+                several styles of chairs. </p>
+            <p>We have two simple menus available or you can use the
+                kitchen for food preparation and serving if you want to have someone else cater. </p>
+        </div>
+
+        <div class="gallery">
+            <figure class="shadow">
+                <img src="images/gPholder.jpg" data-src="images/reception/600px-2-Deko.jpg"
+                    alt="large rectangular tables">
+                <figcaption>large rectangular tables</figcaption>
+            </figure>
+            <figure class="shadow">
+                <img src="images/gPholder.jpg" data-src="images/reception/600px-4-Deko.JPG"
+                    alt="small rectangular tables">
+                <figcaption>small rectangular tables</figcaption>
+            </figure>
+            <figure class="shadow">
+                <img src="images/gPholder.jpg" data-src="images/reception/600px-Zelt-023_0.jpg"
+                    alt="circular table with chair covers">
+                <figcaption>circular table with chair covers</figcaption>
+            </figure>
+            <figure class="shadow">
+                <img src="images/gPholder.jpg" data-src="images/reception/600px-round-dining-table-2306282.jpg"
+                    alt="round table">
+                <figcaption>round table</figcaption>
+            </figure>
+            <figure class="shadow">
+                <img src="images/gPholder.jpg" data-src="images/reception/600px-tables-with-flower-decors-2306281.jpg"
+                    alt="circular table with tall flowers">
+                <figcaption>circular table with tall flowers</figcaption>
+            </figure>
+            <figure class="shadow">
+                <img src="images/gPholder.jpg" data-src="images/reception/600px-thomas-william-OAVqa8hQvWI-unsplash.jpg"
+                    alt="medium reception hall">
+                <figcaption>reception hall</figcaption>
+            </figure>
+        </div>
+
+
+        <div class="menuInfo">
+            <div>
+                <h3>Choice of Menus</h3>
+                <h4>Menu 1</h4>
+                <ul>
+                    <li class="course">First Course</li>
+                    <ul>
+                        <li>Chicken Tenders with Assorted Sauces</li>
+                        <li>Crab Dip with Pita Bread</li>
+                    </ul>
+                    <li class="course">Main Course</li>
+                    <ul>
+                        <li>Stuffed Chicken Breast </li>
+                        <li>Whole Greene Beans with Olive Oil & Sauteed Garlic</li>
+                        <li>Bacon & Cheddar Cheese Roasted Potatoes</li>
+                    </ul>
+                </ul>
+                <h4>Menu 2</h4>
+                <ul>
+                    <li class="nestedList">First Course</li>
+                    <ul>
+                        <li>Greek Salad with Aegeian Vinagrette Dressing</li>
+                    </ul>
+                    <li class="nestedList">Main Course</li>
+                    <ul>
+                        <li>Spiral Ham</li>
+                        <li>Honey Glazed Baby Carrots</li>
+                        <li>Country style Green Beans</li>
+                        <li>Red Potatoes in Butter Cream Sauce</li>
+                    </ul>
+                </ul>
+                <h4>Menu 3</h4>
+                <ul>
+                    <li class="nestedList">First Course</li>
+                    <ul>
+                        <li>Assorted Fresh Fruits and Cheeses</li>
+                    </ul>
+                    <li class="nestedList">Main Course</li>
+                    <ul>
+                        <li>Homemade Vegetarian Lasagne served with Garlic Bread</li>
+                        <li>Roasted Potatoes </li>
+                        <li>Green Beans</li>
+                    </ul>
+
+                </ul>
+
+                <h4> Dessert: Wedding Cake</h4>
+            </div>
+            <div>
+                <h3>Or Use Your Own Caterer</h3>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="footerInfo">
+            &copy; <span id="copyyear"></span> | Temple Inn and Suites | Rita F. Bartholomew <br>
+            <a href="resources.html">Links to Outside Resources Used on this Site</a><br>
+            <span id="currentDate"></span>
+        </div>
+    </footer>
+
+    <script src="js/dateToday.js"></script>
+    <script src="js/year.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/imagehandling.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Cormorant', 'Montserrat']
+            }
+        });
+    </script>
+</body>
+
+</html>
