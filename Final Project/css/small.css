@@ -54,6 +54,8 @@ nav li a {
 .active {
     background-color: #ffd978d3;
     font-weight: bold;
+    color: #014975;
+
 }
 
 
