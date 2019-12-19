@@ -20,7 +20,7 @@ fetch(requestURL)
         let data = document.createElement('section');
         let h4 = document.createElement('h4');
 
-        h4.textContent = templeName + " Temple Closures for 2019";
+        h4.textContent = "Closures for 2019";
 
         function makeUL(array) {
           //Create the list element;
