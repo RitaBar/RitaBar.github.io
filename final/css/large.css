@@ -42,5 +42,10 @@
     margin-left: auto;
     margin-right: auto;
 }
+#resources {
+    max-width: 900px;
+
+
+}
 
 }

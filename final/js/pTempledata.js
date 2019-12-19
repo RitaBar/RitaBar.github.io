@@ -1,4 +1,4 @@
-const requestURL = "temples.json";
+var requestURL = "temples.json";
 
 fetch(requestURL)
   .then(function (response) {
@@ -6,10 +6,9 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
 
-    var temple = document.getElementById("boston").innerHTML;
-      if (temple.includes("Boston")) {
-      templeName = "Boston Massachusetts"
-      
+    var temple = document.getElementById("palmyra").innerHTML;
+      if (temple.includes("Palmyra")) {
+      templeName = "Palmyra New York"
     }
 
     var closed = jsonObject['temples'];
@@ -19,9 +18,9 @@ fetch(requestURL)
         console.log(templeName)
 
         let data = document.createElement('section');
-        let h3 = document.createElement('h3');
+        let h4 = document.createElement('h4');
 
-        h3.textContent = templeName + " Temple Closures for 2019";
+        h4.textContent = templeName + " Temple Closures for 2019";
 
         function makeUL(array) {
           //Create the list element;
@@ -43,11 +42,11 @@ fetch(requestURL)
           return list;
 
         }
-        data.appendChild(h3);
+        data.appendChild(h4);
         //data.appendChild(list)
 
-        document.querySelector('div.closed').appendChild(data);
-        document.querySelector('div.closed').appendChild(makeUL());
+        document.querySelector('div.pclosed').appendChild(data);
+        document.querySelector('div.pclosed').appendChild(makeUL());
 
       }
     }

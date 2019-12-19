@@ -53,6 +53,9 @@
     margin-right: auto;
     }
     
+    #resources {
+        max-width: 760px; 
+    }
     /*---------------- temple page --------------*/
  .templePage {
     max-width: 750px;
