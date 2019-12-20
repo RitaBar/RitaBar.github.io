@@ -9,7 +9,7 @@ bweatherObject.open ("GET",weatherapi, true );
 bweatherObject.send();
 bweatherObject.onload = function() {
   let weatherInfo = JSON.parse(bweatherObject.responseText);
-  console.log(weatherInfo);
+
 
   document.getElementById('bcurrentCondition').innerHTML = weatherInfo.weather[0].main;
   document.getElementById('bcurrentTemp').innerHTML = weatherInfo.main.temp;

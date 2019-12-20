@@ -16,7 +16,7 @@ fetch(requestURL)
 
     for (let i = 0; i < closed.length; i++) {
       if (closed[i].name == templeName) {
-        console.log(templeName)
+
 
         let data = document.createElement('section');
         let h4 = document.createElement('h4');
