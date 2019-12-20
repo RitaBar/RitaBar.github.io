@@ -62,4 +62,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+/*---------------- Registration and Contact Forms --------------*/
+fieldset {
+    max-width: 760px;
+}
+
+
 }

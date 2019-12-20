@@ -47,58 +47,106 @@
     <main>
         <h2>Reservations</h2>
 
-        <form method="get" action="thanks.html">
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label class="top">Full Name* <input type="text" name="fullname" pattern="[^\s][A-z0-9À-ž\s]{5,}"
-                        required></label>
-                <label class="top">Email <input type="email" name="email" placeholder="someone@abcd.com"></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Zipcode* <input type="number" name="zipcode" required></label>
-                <label class="top">Home State or Country <input type="text" name="location"></label>
-            </fieldset>
+        <div class="reserve">
 
-            <fieldset>    
-                <legend>Which Temple*</legend>        
-                <label class="temple"><input type="radio" name="temple" value="Boston Masssachusetts"> Boston Masssachusetts</label>
-                <label class="temple"><input type="radio" name="temple" value="Hartford Connecticut"> Hartford Connecticut</label>                
-                <label class="temple"><input type="radio" name="temple" value="Manhattan New York"> Manhattan New York</label>
-                <label class="temple"><input type="radio" name="temple" value="Palmyra New York"> Palmyra New York</label>  
-            </fieldset>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <h4>Contact Information</h4>
+                    <div>
+                        <input type="text" name="fullname" pattern="[^\s][A-z0-9À-ž\s]{5,}" required>
+                        <label class="top">Full Name* </label>
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="someone@abcd.com">
+                        <label class="top">Email</label>
+                    </div>
+                    <div>
+                        <input type="tel" name="phone" placeholder="1235551234" required>
+                        <label class="top">Phone*</label>
+                    </div>
+                    <div>
+                        <input type="number" name="zipcode" required>
+                        <label class="top">Zipcode*</label>
+                    </div>
+                    <div>
+                        <input type="text" name="location">
+                        <label class="top">Home State or Country</label>
+                    </div>
 
+                    <hr class="gold">
 
-            <fieldset>
-                <label class="top">Arrival Date* <input type="date" name="Arriving" required></label>
-                <label class="top">Departure Date* <input type="date" name="Departing" required></label>
-                <label class="top">Type of Room* <input list="stype" name="roomType" required></label>
-                    <datalist id="stype">
-                        <option value="Single: one person, one or more beds">
-                        <option value="Double: two people, one or more beds">
-                        <option value="Triple: three people, two or more beds">
-                        <option value="Quad: four people, two or more beds">
-                        <option value="Queen: one or more people, queen-sized bed">
-                        <option value="King:one or more people, king-sized bed">
-                        <option value="Twin: one or more people,room with two beds">
-                        <option value="Double-double: room with two double beds">
-                        <option value="Studio: couch converts into a bed">
-                        <option value="Master Suite: living room connected to kitchen and bedroom">
-                        <option value="Connecting Rooms:rooms with individual entrance doors and connecting door between rooms ">
-                        <option value="Adjoining Rooms: room with common wall, no connecting door">
-                        <option value="Adjacent Rooms: rooms close to each other, perhaps across the hall">
-                        <option value="Reception Hall"></option>
-                    </datalist>
-                <label class="top">Number of Rooms*<input type="number" name="quantity" required></label>
+                    <h4>Which Temple</h4>
 
+                    <div>
+                        <input type="radio" name="temple" value="Boston Masssachusetts">
+                        <label class="temple"> Boston Masssachusetts</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="temple" value="Hartford Connecticut">
+                        <label class="temple"> Hartford Connecticut</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="temple" value="Manhattan New York">
+                        <label class="temple"> Manhattan New York</label>
+                    </div>
 
-                <label class="top">Special Accommodations or Additional Comments<textarea name="comment"
-                        placeholder="Enter additional comments here . . ."></textarea></label>
-            </fieldset>
+                    <div>
+                        <input type="radio" name="temple" value="Palmyra New York">
+                        <label class="temple"> Palmyra New York</label>
+                    </div>
 
+                    <hr class="gold">
 
+                    <h4>Dates</h4>
+                    <div>
+                        <input type="date" name="Arriving" required>
+                        <label class="top">Arrival Date*</label>
+                    </div>
+                    <div>
+                        <input type="date" name="Departing" required>
+                        <label class="top">Departure Date*</label>
+                    </div>
 
-            <input type="submit" value="Make Your Reservation" class="submitBtn">
-        </form>
+                    <hr class="gold">
 
+                    <h4>Rooms</h4>
+                    <div>
+                        <input list="stype" name="roomType" required>
+
+                        <datalist id="stype">
+                            <option value="Single: one person, one or more beds">
+                            <option value="Double: two people, one or more beds">
+                            <option value="Triple: three people, two or more beds">
+                            <option value="Quad: four people, two or more beds">
+                            <option value="Queen: one or more people, queen-sized bed">
+                            <option value="King:one or more people, king-sized bed">
+                            <option value="Twin: one or more people,room with two beds">
+                            <option value="Double-double: room with two double beds">
+                            <option value="Studio: couch converts into a bed">
+                            <option value="Master Suite: living room connected to kitchen and bedroom">
+                            <option
+                                value="Connecting Rooms:rooms with individual entrance doors and connecting door between rooms ">
+                            <option value="Adjoining Rooms: room with common wall, no connecting door">
+                            <option value="Adjacent Rooms: rooms close to each other, perhaps across the hall">
+                            <option value="Reception Hall"></option>
+                        </datalist>
+                        <label class="top">Type of Room*</label>
+                    </div>
+                    <div>
+                        <input type="number" name="quantity" min="1" required>
+                        <label class="top">Number of Rooms*</label>
+                    </div>
+
+                    <div>
+                        <textarea name="comment" placeholder="Enter additional comments here . . . ."></textarea>
+                        <label class="top">Special Accommodations or Additional Comments</label>
+                    </div>
+
+                </fieldset>
+
+                <input type="submit" value="Make Your Reservation" class="submitBtn">
+            </form>
+        </div>
 
     </main>
 

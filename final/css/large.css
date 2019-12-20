@@ -44,8 +44,11 @@
 }
 #resources {
     max-width: 900px;
+}
 
-
+/*---------------- Registration and Contact Forms --------------*/
+fieldset {
+    max-width: 95%;
 }
 
 }

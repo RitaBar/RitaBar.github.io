@@ -240,17 +240,18 @@ p {
 
 .templeInfo a:hover {
     text-decoration: none;
-    color: #0072bb;;
+    color: #0072bb;
+    ;
     background-color: white;
 }
 
 .nestedList {
-    list-style-type:none;
+    list-style-type: none;
 }
 
 hr.gold {
     border: 1px solid #ffba08;
-    border-radius: 5px;
+    margin: 3rem;
 }
 
 /*---------------- templediv--------------*/
@@ -305,7 +306,8 @@ hr.gold {
     padding-right: 10px;
 }
 
-.contactInfo, .menuInfo {
+.contactInfo,
+.menuInfo {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 20px;
@@ -346,65 +348,19 @@ figure img {
 }
 
 /*---------------- Registration and Contact Forms --------------*/
-
-form fieldset {
-    margin: 2rem 0;
+fieldset {
+    max-width: 500px;
+    margin: 20px;
     border: 1px solid #0072bb;
     border-radius: 10px;
-    padding: .5rem 2%;
+    padding: .5rem 4%;
 }
 
-form legend {
+fieldset div {
+    display: flex;
+    align-items: center;
     color: #0072bb;
-    margin: 0 1rem;
-    padding: 0 .5rem;
-    font-weight: bold;
-}
-
-form label.top,
-textarea {
-    display: block;
-    padding-top: 1rem;
-    color: #0072bb;
-    font-size: .8rem;
-}
-
-label.temple {
-    display: block;
-    padding-top: 1rem;
-    color: #0072bb;
-    font-size: .8rem;
-    border: white;
-    margin: 0;
-}
-
-form label.top {
-    padding-bottom: 2rem;
-}
-
-form label.top input,
-form label.top select
-    {
-    -webkit-appearance: none;
-    display: block;
-    font-size: 1rem;
-    border: solid 1px #0072bb;
-    border-radius: 4px;
-    padding: .75rem;
-    color: #555;
-    width: 100%;
-    max-width: 20rem;
-    background-color: #1e8fd60e;
-}
-
-textarea {
-    padding: 10px;
-    margin: 0;
-    height: 100px;
-    width: 100%;
-    max-width: 20rem;
-    border: solid 1px #0072bb;
-    border-radius: 4px;
+    margin: 5px;
 }
 
 form input.submitBtn {
@@ -418,11 +374,55 @@ form input.submitBtn {
     max-width: 20rem;
 }
 
-form label.top input:required {
+label {
+    order: 1;
+    width: 10em;
+    padding-right: 0.5em;
+}
+
+input,
+textarea,
+select {
+    order: 2;
+    flex: 1 1 auto;
+    color: #555;
+    border: solid 1px #0072bb;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    order: 1;
+    flex: none;
+    width: auto;
+    margin-left: 10em;
+}
+
+input[type="radio"]~label {
+    width: auto;
+    padding-left: 0.4em;
+}
+
+label.temple {
+    color: #0072bb;
+    background-color: white;
+    border: white;
+    margin: 0;
+}
+
+textarea {
+    padding: 5px;
+    margin: 30px 0 0 0;
+    height: 100px;
+    max-width: 905;
+    border: solid 1px #0072bb;
+    border-radius: 4px;
+}
+
+input:required {
     border-left: #D00000 solid 6px;
 }
 
-form label.top input:required:valid {
+input:required:valid {
     border-left: green solid 6px;
 }
 
@@ -441,7 +441,7 @@ form label.top input:required:valid {
 
 .actionDiv {
     text-decoration: none;
-    }
+}
 
 
 .contactInfo {
