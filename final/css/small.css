@@ -306,11 +306,10 @@ hr.gold {
 }
 
 .contactInfo {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 20px;
-    margin: 40px auto;
-
+    border: 1px solid #0072bb;
+    border-radius: 10px;
+    padding: 30px;
+    background: white;
 }
 
 .menuInfo {
