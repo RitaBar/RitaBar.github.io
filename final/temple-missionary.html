@@ -84,14 +84,27 @@
 
         <form method="get" action="response.html">
             <fieldset>
-                <legend>Contact Us</legend>
-                <label class="top">Full Name* <input type="text" name="fullname" pattern="[^\s][A-z0-9À-ž\s]{5,}"
-                        required></label>
-                <label class="top">Email <input type="email" name="email" placeholder="someone@abcd.com"></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Zipcode* <input type="number" name="zipcode" required></label>
-                <label class="top">Questions<textarea name="comment"
-                        placeholder="Enter questions here . . ."></textarea></label>
+                <h3>Contact Us</h3>
+                <div>
+                    <input type="text" name="fullname" pattern="[^\s][A-z0-9À-ž\s]{5,}" required>
+                    <label class="top">Full Name* </label>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="someone@abcd.com">
+                    <label class="top">Email</label>
+                </div>
+                <div>
+                    <input type="tel" name="phone" placeholder="1235551234" required>
+                    <label class="top">Phone*</label>
+                </div>
+                <div>
+                    <input type="number" name="zipcode" required>
+                    <label class="top">Zipcode*</label>
+                </div>
+                <div>
+                    <textarea name="comment" placeholder="Enter additional comments here . . . ."></textarea>
+                    <label class="top">Special Accommodations or Additional Comments</label>
+                </div>
             </fieldset>
 
             <input type="submit" value="Ask your Questions" class="submitBtn">

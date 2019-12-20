@@ -146,7 +146,7 @@ footer a:link {
 }
 
 footer a:hover {
-    background-color: #d3f3fd6c;
+    background-color: white;
     color: #0072bb;
     text-decoration: none;
 }
@@ -241,7 +241,6 @@ p {
 .templeInfo a:hover {
     text-decoration: none;
     color: #0072bb;
-    ;
     background-color: white;
 }
 
@@ -315,6 +314,7 @@ hr.gold {
     border: 1px solid #0072bb;
     border-radius: 10px;
     padding: 30px;
+    background: white;
 }
 
 .map {
@@ -350,7 +350,6 @@ figure img {
 /*---------------- Registration and Contact Forms --------------*/
 fieldset {
     max-width: 500px;
-    margin: 20px;
     border: 1px solid #0072bb;
     border-radius: 10px;
     padding: .5rem 4%;
@@ -369,7 +368,7 @@ form input.submitBtn {
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
+    margin: 2rem 0 3rem 5%;
     width: 96%;
     max-width: 20rem;
 }
@@ -426,6 +425,8 @@ input:required:valid {
     border-left: green solid 6px;
 }
 
+
+
 /*---------------- Home Page --------------*/
 
 .actionCall {
@@ -444,6 +445,3 @@ input:required:valid {
 }
 
 
-.contactInfo {
-    background: white;
-}
