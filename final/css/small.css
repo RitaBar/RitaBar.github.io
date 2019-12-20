@@ -305,7 +305,14 @@ hr.gold {
     padding-right: 10px;
 }
 
-.contactInfo,
+.contactInfo {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    margin: 40px auto;
+
+}
+
 .menuInfo {
     display: grid;
     grid-template-columns: auto auto;
