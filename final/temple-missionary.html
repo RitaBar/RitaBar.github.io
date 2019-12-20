@@ -81,29 +81,28 @@
             </figure>
         </div>
 
-
         <form method="get" action="response.html">
             <fieldset>
                 <h3>Contact Us</h3>
                 <div>
-                    <input type="text" name="fullname" pattern="[^\s][A-z0-9À-ž\s]{5,}" required>
-                    <label class="top">Full Name* </label>
+                    <input id="fullname" type="text" name="fullname" pattern="[^\s][A-z0-9À-ž\s]{5,}" required>
+                    <label for="fullname">Full Name* </label>
                 </div>
                 <div>
-                    <input type="email" name="email" placeholder="someone@abcd.com">
-                    <label class="top">Email</label>
+                    <input id="email" type="email" name="email" placeholder="someone@abcd.com">
+                    <label for="email">Email</label>
                 </div>
                 <div>
-                    <input type="tel" name="phone" placeholder="1235551234" required>
-                    <label class="top">Phone*</label>
+                    <input id="phone" type="tel" name="phone" placeholder="1235551234" required>
+                    <label for="phone">Phone*</label>
                 </div>
                 <div>
-                    <input type="number" name="zipcode" required>
-                    <label class="top">Zipcode*</label>
+                    <input id="zipcode" type="number" name="zipcode" required>
+                    <label for="zipcode">Zipcode*</label>
                 </div>
                 <div>
-                    <textarea name="comment" placeholder="Enter additional comments here . . . ."></textarea>
-                    <label class="top">Special Accommodations or Additional Comments</label>
+                    <textarea id="comment" name="comment" placeholder="Enter additional comments here . . . ."></textarea>
+                    <label for="comment">Special Accommodations or Additional Comments</label>
                 </div>
             </fieldset>
 

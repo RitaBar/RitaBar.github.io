@@ -53,24 +53,24 @@
                 <fieldset>
                     <h4>Contact Information</h4>
                     <div>
-                        <input type="text" name="fullname" pattern="[^\s][A-z0-9À-ž\s]{5,}" required>
-                        <label class="top">Full Name* </label>
+                        <input id="fullname" type="text" name="fullname" pattern="[^\s][A-z0-9À-ž\s]{5,}" required>
+                        <label for="fullname">Full Name* </label>
                     </div>
                     <div>
-                        <input type="email" name="email" placeholder="someone@abcd.com">
-                        <label class="top">Email</label>
+                        <input id="email" type="email" name="email" placeholder="someone@abcd.com">
+                        <label for="email">Email</label>
                     </div>
                     <div>
-                        <input type="tel" name="phone" placeholder="1235551234" required>
-                        <label class="top">Phone*</label>
+                        <input id="phone" type="tel" name="phone" placeholder="1235551234" required>
+                        <label for="phone">Phone*</label>
                     </div>
                     <div>
-                        <input type="number" name="zipcode" required>
-                        <label class="top">Zipcode*</label>
+                        <input id="zipcode" type="number" name="zipcode" required>
+                        <label for="zipcode">Zipcode*</label>
                     </div>
                     <div>
-                        <input type="text" name="location">
-                        <label class="top">Home State or Country</label>
+                        <input id="location" type="text" name="location">
+                        <label for="location">Home State or Country</label>
                     </div>
 
                     <hr class="gold">
@@ -78,40 +78,40 @@
                     <h4>Which Temple</h4>
 
                     <div>
-                        <input type="radio" name="temple" value="Boston Masssachusetts">
-                        <label class="temple"> Boston Masssachusetts</label>
+                        <input id="boston" type="radio" name="boston" value="Boston Masssachusetts">
+                        <label for="boston"> Boston Masssachusetts</label>
                     </div>
                     <div>
-                        <input type="radio" name="temple" value="Hartford Connecticut">
-                        <label class="temple"> Hartford Connecticut</label>
+                        <input id="hartford" type="radio" name="hartford" value="Hartford Connecticut">
+                        <label for="hartford"> Hartford Connecticut</label>
                     </div>
                     <div>
-                        <input type="radio" name="temple" value="Manhattan New York">
-                        <label class="temple"> Manhattan New York</label>
+                        <input id="manhattan" type="radio" name="manhattan" value="Manhattan New York">
+                        <label for="manhattan"> Manhattan New York</label>
                     </div>
 
                     <div>
-                        <input type="radio" name="temple" value="Palmyra New York">
-                        <label class="temple"> Palmyra New York</label>
+                        <input id="palmyra" type="radio" name="palmyra" value="Palmyra New York">
+                        <label for="palmyra"> Palmyra New York</label>
                     </div>
 
                     <hr class="gold">
 
                     <h4>Dates</h4>
                     <div>
-                        <input type="date" name="Arriving" required>
-                        <label class="top">Arrival Date*</label>
+                        <input id="Arriving" type="date" name="Arriving" required>
+                        <label for="arriving">Arrival Date*</label>
                     </div>
                     <div>
-                        <input type="date" name="Departing" required>
-                        <label class="top">Departure Date*</label>
+                        <input id="Departing" type="date" name="Departing" required>
+                        <label for="departing">Departure Date*</label>
                     </div>
 
                     <hr class="gold">
 
                     <h4>Rooms</h4>
                     <div>
-                        <input list="stype" name="roomType" required>
+                        <input id="roomType" list="stype" name="roomType" required>
 
                         <datalist id="stype">
                             <option value="Single: one person, one or more beds">
@@ -130,16 +130,16 @@
                             <option value="Adjacent Rooms: rooms close to each other, perhaps across the hall">
                             <option value="Reception Hall"></option>
                         </datalist>
-                        <label class="top">Type of Room*</label>
+                        <label for="roomType">Type of Room*</label>
                     </div>
                     <div>
-                        <input type="number" name="quantity" min="1" required>
-                        <label class="top">Number of Rooms*</label>
+                        <input id="quantity" type="number" name="quantity" min="1" required>
+                        <label for="quantity">Number of Rooms*</label>
                     </div>
 
                     <div>
-                        <textarea name="comment" placeholder="Enter additional comments here . . . ."></textarea>
-                        <label class="top">Special Accommodations or Additional Comments</label>
+                        <textarea id="comment" name="comment" placeholder="Enter additional comments here . . . ."></textarea>
+                        <label for="comment">Special Accommodations or Additional Comments</label>
                     </div>
 
                 </fieldset>
